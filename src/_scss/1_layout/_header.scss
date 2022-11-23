@@ -1,0 +1,56 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 15px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    .c-header__slogan{
+        color:$subtext-color;
+        display: block;
+        position: absolute;
+        font-size: 1.2rem;
+        top: 39px;
+        left: 50px;
+        letter-spacing: 0.3px;
+    }
+                
+}
+
+/* Main menu
+------------------------------------------------------------*/
+.c-gnav {
+    ul {}
+
+    li {
+        display: inline-block;
+
+        +li {
+            margin-left: 29px;
+        }
+    }
+
+    a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $main-color;
+        letter-spacing: 0.3px;
+        line-height: 1;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-color: $main-color;
+            text-decoration-thickness: 2px;
+        }
+    }
+}
+
+.is-active {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: $main-color;
+    text-decoration-thickness: 2px;
+}

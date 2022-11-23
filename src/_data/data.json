@@ -1,0 +1,31 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "私たちについて",
+        "url": "/#about"
+      },
+      {
+        "title": "私たちの仕事",
+        "url": "/#works"
+      },
+      {
+        "title": "キャリアプラン",
+        "url": "/#career"
+      },
+      {
+        "title": "社員インタビュー",
+        "url": "/#intaview"
+      },
+      {
+        "title": "会社情報",
+        "url": "/#company"
+      }
+      ,
+      {
+        "title": "募集要項",
+        "url": "/#recruit"
+      }
+    ]
+  }
+}

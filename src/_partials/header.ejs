@@ -1,0 +1,22 @@
+<header class="c-header">
+  <div class="c-header__logo">
+    <a href="<%= BASE_URL %>index.html">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./assets/img/logo-sp.png">
+        <img src="./assets/img/logo.png" alt="ENTEX">
+      </picture>
+      <span class="c-header__slogan">Recruitment 2020</span>
+    </a>
+  </div>
+  <nav class="c-gnav">
+    <ul>
+      <% if (typeof linklists != 'undefined') { %>
+        <% linklists.main && linklists.main.forEach(link => { %>
+          <li>
+            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+          </li>
+        <% }) %>
+      <% } %>
+    </ul>
+  </nav>
+</header>
