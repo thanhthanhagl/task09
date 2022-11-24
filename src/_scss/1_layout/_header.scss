@@ -1,38 +1,35 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 21px 15px;
+    padding: 15px 21px 12px;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
-    .c-header__slogan{
-        color:$subtext-color;
+    
+
+    .c-header__logo {
+        position: relative;
+        max-width: 164px;
+    }
+
+    .c-header__slogan {
+        color: $subtext-color;
         display: block;
         position: absolute;
         font-size: 1.2rem;
-        top: 39px;
-        left: 50px;
-        letter-spacing: 0.3px;
-    }
-                
-}
-
-/* Main menu
-------------------------------------------------------------*/
-.c-gnav {
-    ul {}
-
-    li {
-        display: inline-block;
-
-        +li {
-            margin-left: 29px;
-        }
+        top: 33px;
+        left: 49px;
+        letter-spacing: 0;
     }
 
-    a {
+    .c-header__gnav {
+        width: 58%;
+        overflow: hidden;
+        position: relative;
+        padding-top: 19px; 
+        
+    }
+
+    .c-header__link {
         font-size: 1.6rem;
         font-weight: 400;
         color: $main-color;
@@ -40,17 +37,20 @@
         line-height: 1;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: solid underline $main-color 2px;
             text-underline-offset: 10px;
-            text-decoration-color: $main-color;
-            text-decoration-thickness: 2px;
         }
     }
+
+    .c-header__btnrecruit{
+
+    }
+                
 }
 
+/* Main menu
+------------------------------------------------------------*/
 .is-active {
-    text-decoration: underline;
+    text-decoration: solid underline $main-color 2px;
     text-underline-offset: 10px;
-    text-decoration-color: $main-color;
-    text-decoration-thickness: 2px;
 }

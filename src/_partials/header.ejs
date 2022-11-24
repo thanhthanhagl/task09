@@ -1,4 +1,4 @@
-<header class="c-header">
+<header class="c-header c-flex">
   <div class="c-header__logo">
     <a href="<%= BASE_URL %>index.html">
       <picture>
@@ -8,15 +8,20 @@
       <span class="c-header__slogan">Recruitment 2020</span>
     </a>
   </div>
-  <nav class="c-gnav">
-    <ul>
+  <nav class="c-header__gnav">
+    <ul class="c-header__list c-flex">
       <% if (typeof linklists != 'undefined') { %>
         <% linklists.main && linklists.main.forEach(link => { %>
-          <li>
+          <li class="c-header__link">
             <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
           </li>
         <% }) %>
       <% } %>
     </ul>
   </nav>
+  <div class="c-header__btnrecruit">
+    <a href="#recruit">
+      <span class="c-header__txtrecruit">募集要項</span>
+    </a>
+  </div>
 </header>

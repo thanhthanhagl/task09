@@ -3,7 +3,8 @@
 body {
     font-family: $main-fonts;
     font-size: 1.4rem;
-    min-width: $base-width;
+    max-width: $base-width;
+    margin: 0 auto;
     line-height: 1.5;
 }
 //-------------------------------------------------------
@@ -17,10 +18,16 @@ section {
 
 //-------------------------------------------------------
 .l-container {
-    width: $base-width;
+    max-width: $base-width;
     margin: 0 auto;
 }
-//-------------------------------------------------------
+//-------------------------------------------------------\
+.c-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .c-mainvisual {
     padding: 0;
     height: 700px;
