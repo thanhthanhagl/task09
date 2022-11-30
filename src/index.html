@@ -1,43 +1,125 @@
 <%- include('_layouts/layout', { title: 'ENTEX' }); -%>
 
-<!-- @meta -->
-<meta name="description" content="ENTEX Page">
-<!-- @@meta -->
+  <!-- @meta -->
+  <meta name="description" content="ENTEX Page">
+  <!-- @@meta -->
 
-<!-- @content -->
-<main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-    </div>
-  </section>
-
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
-    </div>
-  </section>
-</main>
-<!-- @@content -->
-
-<!-- @script -->
-<script>
-  console.log("home page");
-</script>
-<!-- @@script -->
+  <!-- @content -->
+  <main class="p-top">
+    <section class="c-mainvisual">
+      <div class="c-mainnvisual__imgs">
+        <picture class="c-mainvisual__img c-mainvisual__zoomin">
+          <source media="(max-width: 1023px)" srcset="../assets/img/entex_mainvisual1tablet.jpg">
+          <source media="(max-width: 767px)" srcset="../assets/img/entex_mainvisual1sp.jpg">
+          <img src="../assets/img/entex_mainvisual1.jpg" alt="若い力を発揮できる環境がココにはある。">
+        </picture>
+        <picture class="c-mainvisual__img c-mainvisual__tobottom">
+          <source media="(max-width: 767px)" srcset="../assets/img/entex_mainvisual1sp.jpg">
+          <img src="../assets/img/entex_mainvisual2.jpg" alt="若い力を発揮できる環境がココにはある。">
+        </picture>
+        <picture class="c-mainvisual__img c-mainvisual__toright">
+          <source media="(max-width: 767px)" srcset="../assets/img/entex_mainvisual1sp.jpg">
+          <img src="../assets/img/entex_mainvisual3.jpg" alt="若い力を発揮できる環境がココにはある。">
+        </picture>
+      </div>
+      <div class="c-mainvisual__inner">
+        <h1 class="c-mainvisual__pagetitle">
+          <span class="c-mainvisual__sub">若い力を</span>
+          <span class="c-mainvisual__sub">発揮できる環境が</span>
+          <span class="c-mainvisual__sub">ココにはある。</span>
+        </h1>
+      </div>
+      <div class="c-mainvisual__btn">
+        <a class="c-mainvisual__btnscroll" href="#about">scroll</a>
+      </div>
+      <h2 class="c-mainvisual__slogan">
+        <span class="c-mainvisual__suborange">暮らしの未来</span><span class="c-mainvisual__subblue">を一緒に作る仲間を募集しています。</span>
+      </h2>
+    </section>
+    <!-- start about -->
+    <section class="c-about" id="about">
+      <div class="c-about__main">
+        <div class="c-about__left">
+          <h2 class="c-about__title">私たちについて</h2>
+          <p class="c-about__p">多能工と呼ばれるプロの職人集団が、外構工事（家の外回りの工事）を中心に事業を展開する会社です。 多能工とは、様々な建設作業が出来る職人の事を意味します。</p>
+          <p class="c-about__p">当社の職人は、重機作業、鉄筋作業、型枠作業、左官作業、電気工事、金物取付作業、土木作業植栽作業、設備作業の全てを1人で行ないます。</p>
+          <p class="c-about__p">
+            <span>体力仕事も少なからず存在しますが、ベトナム人研修生や最新の道具が手助けしますので、昔よりも作業内容は簡略化されています。</span>
+            <br>
+            <span>当社では今後も最新設備を取り入れ、作業負担の軽減化を進めていく予定です。</span>
+          </p>
+          <p class="c-about__p">た、最新道具が発展した現在でも多能工職人になることは難しいのですが、 当社は関西の中でもとくに職人の在籍率が高い会社でもあります。</p>
+          <p class="c-about__p">今では解体工事、リフォーム工事、新築工事なども施工する会社となり、より深く様々な作業を身に付ける事ができる未来発展型の会社です。</p>
+        </div>
+        <div class="c-about__right">
+          <div class="c-about__wrapimg">
+            <picture class="c-about__img c-about__imgtop">
+              <source media="(max-width: 767px)" srcset="../assets/img/about1sp.jpg">
+              <source media="(max-width: 1023px)" srcset="../assets/img/about1tablet.jpg">
+              <img src="../assets/img/about1.jpg" alt="私たちについて top">
+            </picture>
+          </div>
+          <div class="c-about__wrapimg">
+            <picture class="c-about__img c-about__imgbottom">
+              <source media="(max-width: 767px)" srcset="../assets/img/about2sp.jpg">
+              <source media="(max-width: 1023px)" srcset="../assets/img/about2tablet.jpg">
+              <img src="../assets/img/about2.jpg" alt="私たちについて bottom">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+    <!-- start works -->
+    <section class="c-works" id="works">
+      <div class="c-works__top">
+        <h2 class="c-works__title">私たちの仕事</h2>
+        <p class="c-works__desc">
+          <span>エクステリアのプロ集団と言っても、仕事内容はさまざまです。</span>
+          <br>
+          <span>仕事をしていく上で、「あなたの興味のあること」「向いていること」が見つけられるかもしれません。</span>
+        </p>
+      </div>
+      <div class="c-works__main">
+        <div class="c-works__left">
+          <img src="./assets/img/works1.jpg" alt="重機の運転、土木作業の手元">
+          <img src="./assets/img/works2.jpg" alt="ブロック積み、フェンス、カーポート、門扉、照明、ポスト、表札と言われる金物商品の取付工事">
+          <img src="./assets/img/works3.jpg" alt="左官作業と言われるコンクリートを扱う工事作業">
+          <img src="./assets/img/works4.jpg" alt="電気工事（照明、インターホンの取付）">
+        </div>
+        <div class="c-works__right">
+          <div class="c-works__righttop">
+            <h3 class="c-works__subtitle">仕事内容の紹介</h3>
+          <p class="c-works__descsubtitle">屋外での現場作業をメインに行ないます。</p>
+          </div>
+          <div class="c-works__rightmain">
+            <% if (typeof works != 'undefined') { %>
+              <% works.main && works.main.forEach(work => { %>
+                <div class="c-works__item">
+                  <%= work.feature %>">
+                </div>
+              <% }) %>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end works -->
+    <!-- start career -->
+    <section class="c-career" id="career">
+    </section>
+    <!-- end career -->
+    <!-- start interview -->
+    <section class="c-interview" id="interview">
+    </section>
+    <!-- end interview -->
+    <!-- start recruit -->
+    <section class="c-recruit" id="recruit">
+    </section>
+    <!-- end recruit -->
+    <!-- start company -->
+    <section class="c-company" id="company">
+    </section>
+    <!-- end company -->
+  </main>
+  <!-- @@content -->

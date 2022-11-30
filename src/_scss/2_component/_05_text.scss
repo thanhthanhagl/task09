@@ -4,3 +4,23 @@ text
 
 /*
 ------------------------------------------------------------*/
+.c-about {
+    .c-about__p {
+        font-size: 1.6rem;
+        letter-spacing: 0.4px;
+        color: $text-color;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+}
+
+.c-works {
+    .c-works__desc {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+        color: $subtext-color;
+        text-align: center;
+    }
+}

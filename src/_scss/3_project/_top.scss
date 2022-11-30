@@ -1,20 +1,98 @@
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
-.p-top {
-    line-height: 2;
-    // margin: 20px 0 ;
-    // padding: 30px 0;
-    //-------------------------------------------------------
-    &1 {
+.c-mainvisual {
+    position: relative;
+    padding: 0;
+
+    .c-mainvisual__inner {
+        position: absolute;
+        top: 44.5%;
+        left: 10%;
+        transform: translate(0%, -50%);
+        text-align: center;
+        width: 37%;
+        text-align: left;
     }
-    //-------------------------------------------------------
-    &2 {
+}
+
+.c-about {
+    .c-about__main {
+        width: 80%;
+        position: relative;
+        background-color: $main-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include tab {
+            width: 87%;
+        }
+
+        @include sp {
+            width: 97%;
+            flex-direction: column-reverse;
+        }
     }
-    //-------------------------------------------------------
-    &3 {
+
+    .c-about__left {
+        width: 56.8%;
+        padding: 13% 0 13% 13%;
+        margin-right: 40px;
+
+        @include tab {
+            padding: 92px 0 92px 16px;
+        }
+        @include sp {
+            width: 100%;
+        }
     }
-    //-------------------------------------------------------
-    &4 {
+
+    .c-about__right {
+        width: 56.3%;
+        margin-right: -20%;
+        padding: 100px 0;
+
+        @include sp {
+            margin: 0 auto;
+            width: 100%;
+        }
     }
+
+    .c-about__wrapimg {
+        position: relative;
+        max-width: 540px;
+        width: 100%;
+        margin-bottom: 44px;
+
+        &::after {
+            content: "";
+            border: 2px solid #fff;
+            width: 100%;
+            height: 101%;
+            position: absolute;
+            top: 19px;
+            left: -20px;
+        }
+    }
+}
+
+.c-works {
+    .c-works__main {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 13%;
+    }
+
+    .c-works__left {
+        width: 30%;
+    }
+
+    .c-works__right {
+        width: 70%;
+        padding-right: 10%;
+        margin-left: 40px;
+    }
+
 }

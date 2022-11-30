@@ -4,11 +4,32 @@ btn
 
 /*
 ------------------------------------------------------------*/
-.c-btn1 {
-    display: inline-block;
-    padding: 10px 50px;
-    font-size: 1.6rem;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    line-height: 1;
+.c-mainvisual {
+    .c-mainvisual__btn {
+        position: absolute;
+        bottom: 16%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .c-mainvisual__btnscroll {
+        text-transform: uppercase;
+        color: $main-color;
+        font-size: 2rem;
+        letter-spacing: 0.48px;
+        font-weight: 500;
+        transition: opacity 1s ease 1s;
+
+        &::after {
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            bottom: -141%;
+            left: 51%;
+            transform: translateX(-50%);
+            content: "";
+            background-color: $main-color;
+        }
+    }
 }

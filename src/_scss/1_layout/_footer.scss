@@ -2,8 +2,91 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding: 20px;
-    background: #051a2b;
-    color: #fff;
-    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 1200px;
+    width: 100%;
+
+    .c-footer__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .c-footer__top {        
+        padding: 20px 20px 15px;
+    }
+
+    .c-footer__logo {
+        position: relative;
+        max-width: 164px;
+    }
+
+    .c-footer__list {
+        width: 58%;
+        position: relative;
+        left: 2.1%;
+        
+    }
+
+    .c-footer__link {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $main-color;
+        letter-spacing: 0.3px;
+        line-height: 3.5;
+
+        &:hover {
+            &::after {
+                content: "";
+                background-color: $main-color;
+                height: 2px;
+                margin-top: 10px;
+                transition-duration: 0.3s;
+                display: block;
+            }    
+        }    
+    }
+
+    .c-footer__btnrecruit {
+        border-radius: 9px;
+        background-color: $main-color;
+        width: 185px;
+        height: 50px;
+        padding: 10px 0;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .c-footer__imgrecruit {
+        transform: translate(-5px, 4px);
+    }
+
+    .c-footer__txtrecruit {
+        color: $text-color;
+        letter-spacing: 2px;
+        font-size: 1.8rem;
+        line-height: 1.7;
+    }
+
+    .c-footer__intro {
+        color: #a0a0a0;
+        font-weight: 400;
+        font-size: 1.4rem;
+        text-decoration: underline;
+        letter-spacing: 0.3px;
+        text-align: right;
+        padding-right: 30px;
+        margin: 15px 0;
+    }
+
+    .c-footer__copyright {
+        background-color: $main-color;
+        color: $text-color;
+        font-size: 1.4rem;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        padding: 16px 0;
+    }                
 }
