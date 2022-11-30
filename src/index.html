@@ -82,10 +82,10 @@
       </div>
       <div class="c-works__main">
         <div class="c-works__left">
-          <img src="./assets/img/works1.jpg" alt="重機の運転、土木作業の手元">
-          <img src="./assets/img/works2.jpg" alt="ブロック積み、フェンス、カーポート、門扉、照明、ポスト、表札と言われる金物商品の取付工事">
-          <img src="./assets/img/works3.jpg" alt="左官作業と言われるコンクリートを扱う工事作業">
-          <img src="./assets/img/works4.jpg" alt="電気工事（照明、インターホンの取付）">
+          <img class="c-works__img" src="./assets/img/works1.jpg" alt="重機の運転、土木作業の手元">
+          <img class="c-works__img" src="./assets/img/works2.jpg" alt="ブロック積み、フェンス、カーポート、門扉、照明、ポスト、表札と言われる金物商品の取付工事">
+          <img class="c-works__img" src="./assets/img/works3.jpg" alt="左官作業と言われるコンクリートを扱う工事作業">
+          <img class="c-works__img" src="./assets/img/works4.jpg" alt="電気工事（照明、インターホンの取付）">
         </div>
         <div class="c-works__right">
           <div class="c-works__righttop">
@@ -96,10 +96,21 @@
             <% if (typeof works != 'undefined') { %>
               <% works.main && works.main.forEach(work => { %>
                 <div class="c-works__item">
-                  <%= work.feature %>">
+                  <span class="c-works__feature"><%= work.feature %></span>
                 </div>
               <% }) %>
             <% } %>
+          </div>
+        </div>
+      </div>
+      <div class="c-works__media">
+        <div class="c-works__col"></div>
+        <div class="c-works__col">
+          <div class="c-works__imgs">
+            <div class="c-works__photo">
+              <picture></picture>
+              <p>pick up</p>
+            </div>
           </div>
         </div>
       </div>

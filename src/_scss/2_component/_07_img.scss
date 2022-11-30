@@ -30,3 +30,10 @@ img
     }
 }
 
+.c-works {
+    .c-works__img {
+        object-fit: cover;
+        max-width: 400px;
+    }
+}
+

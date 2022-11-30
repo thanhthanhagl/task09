@@ -43,6 +43,7 @@ Css of home page
         @include tab {
             padding: 92px 0 92px 16px;
         }
+
         @include sp {
             width: 100%;
         }
@@ -78,21 +79,56 @@ Css of home page
 }
 
 .c-works {
+    .c-work__top{
+        margin-bottom: 60px;
+    }
     .c-works__main {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
-        margin-left: 13%;
     }
 
     .c-works__left {
-        width: 30%;
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 10px;
     }
 
     .c-works__right {
-        width: 70%;
-        padding-right: 10%;
-        margin-left: 40px;
+        width: 57%;
+        padding: 7% 0 0 3%;
+    }
+    .c-works__rightmain{        
+        counter-reset: number;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;        
     }
 
+    .c-works__item {
+        display: flex;
+        max-width: 560px;
+        width: 100%;        
+        background-color: $main-color;
+        margin-bottom:21px;
+        &::before {
+            counter-increment: number;
+            content: counter(number);
+            display: block;
+            margin:auto;
+            color: $text-color;
+            text-align: center;
+            max-width: 54px;
+            width: 100%;
+        }
+    }
+    .c-works__feature{
+        width: 90%;
+        background-color: $text-color;
+        color: $main-color;
+        border: 1px solid $main-color;
+        display: block;
+        padding:2% 4%;
+    }
 }
