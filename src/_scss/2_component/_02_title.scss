@@ -58,6 +58,7 @@ title
 
 .c-works {
     .c-works__title {
+        margin-top: 100px;
         color: $main-color;
         font-size: 3.4rem;
         font-weight: 500;
@@ -65,5 +66,81 @@ title
         line-height: 2;
         text-align: center;
     }
-    
+
+    .c-works__subtitle {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        color: $main-color;
+        line-height: 1.2;
+    }
+
+    .c-works__mediatitle {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        color: $main-color;
+        line-height: 1.5;
+    }
+}
+
+.c-career {
+    .c-career__title {
+        color: $main-color;
+        font-size: 3.4rem;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 2.5px;
+        text-align: center;
+    }
+
+    .c-career__subtitle {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        color: $main-color;
+        line-height: 1.3;
+    }
+
+    .c-career__roadmaptitle {
+        color: $main-color;
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        line-height: 1.3;
+    }
+
+    .c-career__milestones {
+        font-size: 2.5rem;
+        letter-spacing: 0.6px;
+        font-weight: 600;
+        color: $main-color;
+        line-height: 1.5;
+    }
+
+    .c-career__welfare {
+        color: $sub-color;
+        letter-spacing: 0.7px;
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .c-career__supporttitle {
+        color: $sub-color;
+        font-weight: 500;
+        font-size: 2.8rem;
+        letter-spacing: 0.7px;
+    }
+}
+
+.c-interview {
+    .c-interview__title {
+        font-size: 4.4rem;
+        font-weight: 500;
+        letter-spacing: 3.3px;
+        color: $main-color;
+        line-height: 1;
+        text-align: center;
+    }
 }

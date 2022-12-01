@@ -90,27 +90,42 @@
         <div class="c-works__right">
           <div class="c-works__righttop">
             <h3 class="c-works__subtitle">仕事内容の紹介</h3>
-          <p class="c-works__descsubtitle">屋外での現場作業をメインに行ないます。</p>
+            <p class="c-works__descsubtitle">屋外での現場作業をメインに行ないます。</p>
           </div>
           <div class="c-works__rightmain">
-            <% if (typeof works != 'undefined') { %>
-              <% works.main && works.main.forEach(work => { %>
+            <% if (typeof works !='undefined' ) { %>
+              <% works.main && works.main.forEach(work=> { %>
                 <div class="c-works__item">
-                  <span class="c-works__feature"><%= work.feature %></span>
+                  <span class="c-works__feature">
+                    <%= work.feature %>
+                  </span>
                 </div>
-              <% }) %>
-            <% } %>
+                <% }) %>
+                  <% } %>
           </div>
         </div>
       </div>
       <div class="c-works__media">
-        <div class="c-works__col"></div>
-        <div class="c-works__col">
-          <div class="c-works__imgs">
-            <div class="c-works__photo">
-              <picture></picture>
-              <p>pick up</p>
-            </div>
+        <div class="c-works__mediatop">
+          <h2 class="c-works__mediatitle">Photos & Movie</h2>
+          <p class="c-works__mediadesc">私たちの仕事内容の一部を動画と写真でお伝えします。</p>
+        </div>
+        <div class="c-works__mediamain">
+          <div class="c-works__col">
+            <video controls autoplay muted>
+              <source src="./assets/video/entex_video01.mp4" type="video/mp4">
+              私たちの仕事内容の一部を動画と写真でお伝えします。
+            </video>
+          </div>
+          <div class="c-works__col">
+            <% if (typeof media !='undefined' ) { %>
+              <% media.main && media.main.forEach(photo=> { %>
+                <div class="c-works__photo">
+                  <img src="<%= photo.url %>" alt="<%= photo.alt%>">
+                  <p class="c-works__pickup">pick up</p>
+                </div>
+                <% }) %>
+                  <% } %>
           </div>
         </div>
       </div>
@@ -118,10 +133,213 @@
     <!-- end works -->
     <!-- start career -->
     <section class="c-career" id="career">
+      <div class="c-career__top">
+        <h2 class="c-career__title">もうすぐ創業50年、<br>
+          あなたのキャリアプランもしっかり考えています。</h2>
+        <p class="c-career__desc">
+          世間では、終身雇用が保証されにくい世の中になってきました。<br>
+          その中で、「長く勤めることができる会社」「手に職をつけられる業種」は、キャリア形成にも影響します。<br>
+          人が生きている以上、家や建物を建てることは無くなりません。<br>
+          また、古くなった建物を部分的に改修することは増えていきます。<br>
+          その時にあなたがエクステリア業界のプロになっていれば、たくさんの生きる道を作ることができます。<br>
+          株式会社ENTEXでは、会社の成長だけでなく、あなたの成長も応援します。<br>
+        </p>
+      </div>
+      <div class="c-career__banner">
+        <picture class="c-career__bannerimg">
+          <source media="(max-width: 767px)" srcset="./assets/img/career.jpg">
+          <source media="(max-width: 1023px)" srcset="./assets/img/career.jpg">
+          <img src="./assets/img/career.jpg" alt="人材育成に最大限の力を注ぎます！">
+        </picture>
+        <div class="c-career__inner">
+          <h3 class="c-career__subtitle">人材育成に最大限の力を注ぎます！</h3>
+          <p class="c-career__subdesc">
+            【入社後の研修制度について】<br>
+            入社後は、専属の先輩社員と共に現場で簡易な作業から仕事を開始してもらいます。<br>
+            職長と呼ばれる、現場を管理する人に付いて道具、材料の名前や作業内容を把握しながら、勉強してもらいます。最初は一人の職長と同じ現場で作業を行ないますが、慣れてきたら、色々な現場で沢山の職長と触れ合いながら学ぶ事が出来ます。<br>
+            雨天の日は、屋内で金物や、ブロックの施工練習、図面の勉強も実施します。<br>
+          </p>
+        </div>
+      </div>
+      <div class="c-career__roadmap">
+        <h2 class="c-career__roadmaptitle">入社後のキャリアプラン</h2>
+        <div class="c-career__roadmapmain">
+          <% if (typeof roadmap !='undefined' ) { %>
+            <% roadmap.main && roadmap.main.forEach(miles=> { %>
+              <div class="c-career__roadmapitem">
+                <h3 class="c-career__milestones">
+                  <%= miles.milestones %>
+                </h3>
+                <div class="c-career__roadmapinfo">
+                  <%- miles.desc %>
+                </div>
+              </div>
+              <% }) %>
+                <% } %>
+                  <div class="c-career__roadmapquote">
+                    <span class="c-career__roadmapqnote">あなたは、どんな未来に向けて<br>
+                      どんなキャリアで仕事をしたいですか？</span>
+                  </div>
+        </div>
+      </div>
+      <div class="c-career__about">
+        <div class="c-career__aboutleft">
+          <picture class="c-career__img">
+            <source media="(max-width: 767px)" srcset="./assets/img/career1sp.jpg">
+            <source media="(max-width: 1023px)" srcset="./assets/img/career1tablet.jpg">
+            <img src="./assets/img/career1.jpg" alt="私たちについて top">
+          </picture>
+          <picture class="c-career__img">
+            <source media="(max-width: 767px)" srcset="./assets/img/career2sp.jpg">
+            <source media="(max-width: 1023px)" srcset="./assets/img/career2tablet.jpg">
+            <img src="./assets/img/career2.jpg" alt="私たちについて top">
+          </picture>
+          <picture class="c-career__img">
+            <source media="(max-width: 767px)" srcset="./assets/img/career3sp.jpg">
+            <source media="(max-width: 1023px)" srcset="./assets/img/career3tablet.jpg">
+            <img src="./assets/img/career3.jpg" alt="私たちについて top">
+          </picture>
+          <picture class="c-career__img">
+            <source media="(max-width: 767px)" srcset="./assets/img/career4sp.jpg">
+            <source media="(max-width: 1023px)" srcset="./assets/img/career4tablet.jpg">
+            <img src="./assets/img/career4.jpg" alt="私たちについて top">
+          </picture>
+        </div>
+        <div class="c-career__aboutright">
+          <h3 class="c-career__welfare">充実した福利厚生サービス</h3>
+          <ul class="c-career__welfarelist">
+            <li class="c-career__welfareitem">遠方から弊社に入社される人は、ENTEX本社の上に社宅(社員寮)があります。
+              <span class="c-career__welfarenote">※現在は満室のため、近くのワンルームから（自転車通勤圏内）通勤していただきます。</span>
+            </li>
+            <li class="c-career__welfareitem">年1回社員旅行を開催(参加希望者のみ)
+              <span class="c-career_-welfarenote">※社員旅行積立金3,000円（会社が旅費の半分以上を負担）</span>
+            </li>
+            <li class="c-career__welfareitem">社会保険完備<span class="c-career__welfareitemsub">(雇用保険、労災保険、健康保険、厚生年金）</span>
+            </li>
+            <li class="c-career__welfareitem">希望者参加型の食事会<span class="c-career__welfareitemsub">(費用は会社負担)</span></li>
+            <li class="c-career__welfareitem">各種手当も充実
+              <ul class="c-career__welfaresubitem">
+                <li>皆勤手当：5,000円</li>
+                <li>雨天手当：1,000円</li>
+                <li>固定休日手当：5日分（賃金単価による）</li>
+                <li>資格手当</li>
+                <li>残業、休日手当</li>
+                <li>技能手当</li>
+                <li>通勤手当：月3万円まで</li>
+              </ul>
+            </li>
+            <li class="c-career__welfareitem">昇給あり</li>
+            <li class="c-career__welfareitem">賞与あり（夏・冬 年2回）</li>
+          </ul>
+          <div class="c-career__support">
+            <h3 class="c-career__supporttitle">独立支援制度も充実!20代でも独立可能</h3>
+            <ul class="c-career__supportinfo">独立支援制度
+              <li class="c-career__supportfirst">資格取得費用の援助
+                <ul>
+                  <li class="c-career__supportitem">座学（法律、行政への対応）の勉強支援</li>
+                  <li class="c-career__supportitem">仕入先の紹介</li>
+                  <li class="c-career__supportitem">顧問税理士、行政書士、弁護士の紹介</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end career -->
     <!-- start interview -->
     <section class="c-interview" id="interview">
+      <div class="c-interview__top">
+        <h2 class="c-interview__title">先輩社員からのメッセージ</h2>
+        <p class="c-interview__desc">
+          未経験で入社した多くのメンバーが活躍しています。<br>
+          各部門で活躍する現役メンバーたちの「リアルな声」をお届けします。
+        </p>
+      </div>
+      <div class="c-interview__list">
+        <% if (typeof interview !='undefined' ) { %>
+          <% interview.main && interview.main.forEach (person=>{ %>
+            <div class="c-interview__item">
+              <div class="c-interview__ava">
+                <picture>
+                  <source media="(max-width:767px" srcset="<%= person.avasp %>">
+                  <img src="<%= person.ava %>" alt="<%= person.name %>">
+                </picture>
+              </div>
+              <p class="c-interview__intro">
+                <%= person.intro %>
+              </p>
+              <div class="c-interview__info">
+                <p class="c-interview__name">
+                  <%= person.name %>
+                </p>
+                <p class="c-interview__position">
+                  <%= person.position %>
+                </p>
+              </div>
+            </div>
+            <% })} %>
+      </div>
+      <div class="c-interview__message">
+        <h2 class="c-interview__messtitle">代表メッセージ</h2>
+        <h3 class="c-interview__quote">「学歴・経験不問。ポテンシャル重視で採用」</h3>
+        <div class="c-interview__messmain">
+          <div class="c-interview__messtext">
+            <p class="c-interview__p">
+              弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっていま
+              す。何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向い
+              て仕事が出来ます。
+            </p>
+            <p class="c-interview__p">
+              また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい
+              職場作りを目指しております。<br>
+              メンバー同士、助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。
+            </p>
+            <p class="c-interview__p">
+              昔のように職人は誰でもなれる職業ではありません。身体も頭脳も健全でなければ一流の職人に
+              はなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。
+            </p>
+          </div>
+          <div class="c-interview__messimg">
+            <picture>
+              <source media="(max-width:767px)" srcset="./assets/img/ceo-sp.jpg">
+              <source media="(max-width:1023px)" srcset="./assets/img/ceo-tablet.jpg">
+              <img src="./assets/img/ceo.jpg" alt="代表メッセージ">
+            </picture>
+          </div>
+        </div>
+        <h3 class="c-interview__mess">自分の作品として最低でも50年は施工場所が残る仕事です。<br>
+          大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br>
+          とても嬉しくて遣り甲斐のある仕事です。<br>
+        </h3>
+        <p class="c-interview__signal">
+          <span class="c-interview__unit">株式会社ENTEX</span>
+          <span class="c-interview__unit">代表取締役社長</span>
+          <span class="c-interview__unit">遠藤 剛</span>
+        </p>
+        <p class="c-interview__origin">社名の由来</p>
+        <div class="c-interview__bottom">
+          <picture class="c-interview__logo">
+            <source media="(max-width:767px)" srcset="./assets/img/logo-sp.jpg">
+            <source media="(max-width:1023px)" srcset="./assets/img/logo-tablet.jpg">
+            <img src="./assets/img/logo.jpg" alt="社名の由来">
+          </picture>
+          <div class="c-interview__explan">
+            <p>
+              <span>EN</span>
+              <span>当社代表「遠藤(Endo)」の頭文字</span>
+            </p>
+            <p>
+              <span>TE</span>
+              <span>テクノロジー(技術)</span>
+            </p>
+            <p>
+              <span>X</span>
+              <span>無限に成長すると言う意味のX</span>
+            </p>          
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end interview -->
     <!-- start recruit -->

@@ -50,5 +50,86 @@
         "feature": "型枠の設置工事"
       }
     ]
+  },
+  "media": {
+    "main": [
+      {
+        "url": "./assets/img/media1.jpg",
+        "alt": "fence"
+      },
+      {
+        "url": "./assets/img/media2.jpg",
+        "alt": "plant"
+      },
+      {
+        "url": "./assets/img/media3.jpg",
+        "alt": "house"
+      },
+      {
+        "url": "./assets/img/media4.jpg",
+        "alt": "white house"
+      },
+      {
+        "url": "./assets/img/media5.jpg",
+        "alt": "garage"
+      },
+      {
+        "url": "./assets/img/media6.jpg",
+        "alt": "door"
+      },
+      {
+        "url": "./assets/img/media7.jpg",
+        "alt": "yard"
+      },
+      {
+        "url": "./assets/img/media8.jpg",
+        "alt": "tree"
+      }
+    ]
+  },
+  "roadmap": {
+    "main": [
+      {
+        "milestones": "入社1年目",
+        "desc": "たくさんの現場を経験し、いろんな先輩社員と接することで、まずは一通りの作業内容と現場作業の流れを把握します。"
+      },
+      {
+        "milestones": "入社3年目",
+        "desc": "1人で現場での作業を徐々に行います。"
+      },
+      {
+        "milestones": "入社5年目",
+        "desc": "職長（現場での管理が出来る人）昇格に向けて必要な研修や資格を取得してもらいます。職長になると、現場でお客様との打合せや材料の注文、品質管理、工事写真管理、原価管理といった管理業務も担います。"
+      },
+      {
+        "milestones": "入社10年目〜 独立か、管理職か。",
+        "desc": "独立を希望する人は、<br> 建築士や施工管理技術者への資格の取得、独立に向けての勉強までサポートします。独立後はENTEXから仕事を受注することも可能です。仕入先の紹介なども行ないますので、安心して独立できます。<br><br>独立を望まない人は、<br>管理職となり職人の管理や他社が開催する会議へ参加したり、お客様との工事打合せの作業内容確認を行います。"
+      }
+    ]
+  },
+  "interview": {
+    "main": [
+      {
+        "ava": "./assets/img/p1.jpg",
+        "avasp":"./assets/img/p1sp.jpg",
+        "intro": "いつも明るく元気に作業。朝も一番に出勤してます！",
+        "name": "安川　聖 (30)",
+        "position": "入社2年目・外構担当職人"
+      },
+      {
+        "ava": "./assets/img/p2.jpg",
+        "avasp":"./assets/img/p2sp.jpg",
+        "intro": "職長として土木・外構工事の現場管理をしながら作業指示",
+        "name": "福元　和稔 (45)",
+        "position": "入社3年目・土木、外構担当職長  "
+      },
+      {
+        "ava": "./assets/img/p3.jpg",
+        "avasp":"./assets/img/p3sp.jpg",
+        "intro": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
+        "name": "工藤　智成(41)",
+        "position": "入社23年目・外構部長"
+      }
+    ]
   }
 }

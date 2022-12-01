@@ -7,7 +7,7 @@ img
 .c-mainvisual {
     .c-mainvisual__img {
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 80px);
         min-height: 500px;
     }
 
@@ -34,6 +34,14 @@ img
     .c-works__img {
         object-fit: cover;
         max-width: 400px;
+        width: 100%;
+    }
+}
+
+.c-career {
+    .c-career__bannerimg {
+        object-fit: cover;
+        width: 100%;
     }
 }
 
