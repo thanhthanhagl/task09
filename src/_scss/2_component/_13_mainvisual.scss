@@ -1,0 +1,103 @@
+.c-mainvisual {
+    position: relative;
+    padding: 0;
+
+    .c-mainvisual__inner {
+        position: absolute;
+        top: 44.8%;
+        left: 10%;
+        transform: translate(0%, -50%);
+        text-align: center;
+        width: 37%;
+        text-align: left;
+    }
+
+    .c-mainvisual__btn {
+        position: absolute;
+        bottom: 15.6%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .c-mainvisual__btnscroll {
+        text-transform: uppercase;
+        color: $main-color;
+        font-size: 2rem;
+        letter-spacing: 0.48px;
+        font-weight: 500;
+        transition: opacity 1s ease 1s;
+
+        &::after {
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            bottom: -141%;
+            left: 51%;
+            transform: translateX(-50%);
+            content: "";
+            background-color: $main-color;
+        }
+    }
+
+    .c-mainvisual__pagetitle {
+        color: $text-color;
+        font-size: 5rem;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        line-height: 1.4;
+
+        &:nth-child(2) {
+            padding-right: 8px;
+        }
+    }
+
+    .c-mainvisual__sub {
+        background-color: $main-color;
+        display: block;
+        width: fit-content;
+        padding: 0 5px 0 8px;
+        margin-bottom: 16px;
+    }    
+
+    .c-mainvisual__slogan {
+        position: absolute;
+        background-color: $text-color;
+        letter-spacing: 1.9px;
+        text-align: center;
+        font-size: 2.6rem;
+        line-height: 1.2;
+        bottom: 0;
+        transform: translate(6px, 0);
+        padding: 37px 0 28px;
+        left: 9.6%;
+        width: 80.1%;
+        font-weight: 500;
+    }
+
+    .c-mainvisual__suborange {
+        color: $sub-color;
+    }
+
+    .c-mainvisual__subblue {
+        color: $main-color;
+    }
+
+    .c-mainvisual__img {
+        width: 100%;
+        height: calc(100vh - 115px);
+        min-height: 500px;
+    }
+
+    .slick-active.c-mainvisual__zoomin {
+        animation: zoomin 10s infinite linear;
+    }
+
+    .slick-active.c-mainvisual__tobottom {
+        animation: tobottom 10s infinite linear;
+    }
+
+    .slick-active.c-mainvisual__toright {
+        animation: toright 10s infinite linear;
+    }
+}

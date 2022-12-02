@@ -4,13 +4,14 @@ footer
 .c-footer {
     position: relative;
     background: rgba(255, 255, 255, 0.9);
-    max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
+    border-top: 1px solid $main-color;
 
     .c-footer__main {
         display: flex;
         flex-direction: column;
+        max-width: 1200px;
+        width: 100%;
     }
 
     .c-footer__top {        

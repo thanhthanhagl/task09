@@ -1,0 +1,267 @@
+.c-career {
+    margin: 100px auto 0;
+
+    .c-career__top {
+        margin: auto;
+    }
+
+    .c-career__banner {
+        margin: 100px auto 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .c-career__inner {
+        max-width: 489px;
+        width: 100%;
+        background-color: $text-color;
+        padding: 42px 25px 40px 40px;
+        position: absolute;
+        top: 14%;
+        left: 10%;
+    }
+
+    .c-career__roadmap {
+        max-width: 921px;
+        width: 100%;
+        margin-top: 74px;
+        background-color: #f8f8f8;
+        padding: 100px 65px 100px 120px;
+    }
+
+    .c-career__roadmapmain {
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+
+    .c-career__roadmapitem {
+        max-width: 696px;
+        width: 100%;
+    }
+
+    .c-career__roadmapquote {
+        max-width: 652px;
+        width: 100%;
+        margin-top: 7%;
+        margin-left: 7%;
+        padding: 31px 0 33px;
+        position: relative;
+
+        &::before {
+            content: url("./assets/img/quote-left.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            content: url("./assets/img/quote-right.svg");
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .c-career__about {
+        width: 100%;
+        display: flex;
+    }
+
+    .c-career__aboutleft {
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 10px;
+    }
+
+    .c-career__aboutright {
+        width: 57%;
+        padding: 7% 0 0 3%;
+        background-color: #fdfbef;
+    }
+
+    .c-career__welfarelist {
+        max-width: 560px;
+        width: 100%;
+    }
+
+    .c-career__support {
+        margin-top: 65px;
+    }
+
+    .c-career__title {
+        color: $main-color;
+        font-size: 3.4rem;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 2.5px;
+        text-align: center;
+    }
+
+    .c-career__subtitle {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        color: $main-color;
+        line-height: 1.3;
+    }
+
+    .c-career__roadmaptitle {
+        color: $main-color;
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        line-height: 1.3;
+    }
+
+    .c-career__milestones {
+        font-size: 2.5rem;
+        letter-spacing: 0.6px;
+        font-weight: 600;
+        color: $main-color;
+        line-height: 1.5;
+    }
+
+    .c-career__welfare {
+        color: $sub-color;
+        letter-spacing: 0.7px;
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .c-career__supporttitle {
+        color: $sub-color;
+        font-weight: 500;
+        font-size: 2.8rem;
+        letter-spacing: 0.7px;
+    }
+
+    .c-career__desc {
+        color: $subtext-color;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.5;
+        margin-top: 21px;
+    }
+
+    .c-career__subdesc {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $td-color;
+        letter-spacing: 0.4px;
+        line-height: 1.7;
+        margin-top: 19px;
+    }
+
+    .c-career__roadmapinfo {
+        border-left: 1px solid $main-color;
+        color: $main-color;
+        font-size: 1.6rem;
+        letter-spacing: 0.4px;
+        line-height: 1.7;
+        padding: 5% 0 5% 15%;
+        margin-left: 7%;
+    }
+
+    .c-career__roadmapqnote {
+        color: $sub-color;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        line-height: 1.5;
+        text-align: center;
+        display: block;
+    }
+
+    .c-career__welfareitem {
+        color: $subtext-color;
+        font-size: 1.8rem;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        line-height: 2;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f111";
+            font-size: 0.9rem;
+            font-weight: 900;
+            color: $subtext-color;
+            margin-right: 13px;
+        }
+    }
+
+    .c-career__welfarenote {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 0.38px;
+        margin-left: 23px;
+    }
+
+    .c-career__welfaresubitem {
+        margin-left: 23px;
+
+        li {
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: $subtext-color;
+            letter-spacing: 0.4px;
+            line-height: 1.5;
+
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f111";
+                font-size: 0.2rem;
+                font-weight: 900;
+                color: $subtext-color;
+                margin: auto 8px;
+            }
+        }
+    }
+
+    .c-career__supportinfo {
+        margin-top: 27px;
+        font-weight: 500;
+        font-size: 1.8rem;
+        letter-spacing: 0.5px;
+        color: $subtext-color;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f111";
+            font-size: 0.9rem;
+            font-weight: 900;
+            color: $subtext-color;
+            margin-right: 13px;
+        }
+    }
+
+    .c-career__supportfirst {
+        margin-top: 14px;
+        margin-left: 23px;
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 0.4rem;
+        line-height: 1.5;
+    }
+
+    .c-career__supportitem {
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f111";
+            font-size: 0.2rem;
+            font-weight: 900;
+            color: $subtext-color;
+            margin: auto 8px;
+        }
+    }
+
+    .c-career__bannerimg {
+        object-fit: cover;
+        width: 100%;
+    }
+}

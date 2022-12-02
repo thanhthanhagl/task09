@@ -1,0 +1,80 @@
+.c-about {
+    .c-about__main {
+        width: 76.7%;
+        position: relative;
+        background-color: $main-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include tab {
+            width: 87%;
+        }
+
+        @include sp {
+            width: 97%;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .c-about__left {
+        width: 57.8%;
+        padding: 12.2% 0 16% 13%;
+
+        @include tab {
+            padding: 92px 0 92px 16px;
+        }
+
+        @include sp {
+            width: 100%;
+        }
+    }
+
+    .c-about__right {
+        width: 58.3%;
+        margin-right: -23.7%;
+        padding: 100px 0;
+
+        @include sp {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    .c-about__wrapimg {
+        position: relative;
+        max-width: 540px;
+        width: 100%;
+        margin-bottom: 46px;
+
+        &::after {
+            content: "";
+            border: 2px solid #fff;
+            width: 99.5%;
+            height: 101%;
+            position: absolute;
+            top: 19px;
+            left: -21px;
+        }
+    }
+
+    .c-about__title {
+        color: $text-color;
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        margin-bottom: 23px;
+    }
+
+    .c-about__p {
+        font-size: 1.6rem;
+        letter-spacing: 0.4px;
+        color: $text-color;
+        margin-bottom: 25px;
+        line-height: 1.8;
+    }
+
+    .c-about__img {
+        object-fit: cover;
+    }
+}

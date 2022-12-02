@@ -114,7 +114,7 @@
           <div class="c-works__col">
             <video controls autoplay muted>
               <source src="./assets/video/entex_video01.mp4" type="video/mp4">
-              私たちの仕事内容の一部を動画と写真でお伝えします。
+              <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
             </video>
           </div>
           <div class="c-works__col">
@@ -265,78 +265,85 @@
                   <source media="(max-width:767px" srcset="<%= person.avasp %>">
                   <img src="<%= person.ava %>" alt="<%= person.name %>">
                 </picture>
+                <p class="c-interview__interview">interview</p>
               </div>
               <p class="c-interview__intro">
                 <%= person.intro %>
               </p>
               <div class="c-interview__info">
-                <p class="c-interview__name">
-                  <%= person.name %>
-                </p>
-                <p class="c-interview__position">
-                  <%= person.position %>
-                </p>
+                <div class="c-interview__text">
+                  <p class="c-interview__name">
+                    <%= person.name %>
+                  </p>
+                  <p class="c-interview__position">
+                    <%= person.position %>
+                  </p>
+                </div>
               </div>
             </div>
             <% })} %>
       </div>
       <div class="c-interview__message">
-        <h2 class="c-interview__messtitle">代表メッセージ</h2>
-        <h3 class="c-interview__quote">「学歴・経験不問。ポテンシャル重視で採用」</h3>
-        <div class="c-interview__messmain">
-          <div class="c-interview__messtext">
-            <p class="c-interview__p">
-              弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっていま
-              す。何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向い
-              て仕事が出来ます。
-            </p>
-            <p class="c-interview__p">
-              また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい
-              職場作りを目指しております。<br>
-              メンバー同士、助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。
-            </p>
-            <p class="c-interview__p">
-              昔のように職人は誰でもなれる職業ではありません。身体も頭脳も健全でなければ一流の職人に
-              はなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。
-            </p>
+        <div class="c-interview__messwrap">
+          <h2 class="c-interview__messtitle">代表メッセージ</h2>
+          <div class="c-interview__messmain">
+            <div class="c-interview__messtext">
+              <h3 class="c-interview__quote">「学歴・経験不問。ポテンシャル重視で採用」</h3>
+              <p class="c-interview__p">
+                弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっていま
+                す。何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向い
+                て仕事が出来ます。
+              </p>
+              <p class="c-interview__p">
+                また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい
+                職場作りを目指しております。<br>
+                メンバー同士、助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。
+              </p>
+              <p class="c-interview__p">
+                昔のように職人は誰でもなれる職業ではありません。身体も頭脳も健全でなければ一流の職人に
+                はなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。
+              </p>
+            </div>
+            <div class="c-interview__messimg">
+              <picture>
+                <source media="(max-width:767px)" srcset="./assets/img/ceo-sp.jpg">
+                <source media="(max-width:1023px)" srcset="./assets/img/ceo-tablet.jpg">
+                <img src="./assets/img/ceo.jpg" alt="代表メッセージ">
+              </picture>
+            </div>
           </div>
-          <div class="c-interview__messimg">
-            <picture>
-              <source media="(max-width:767px)" srcset="./assets/img/ceo-sp.jpg">
-              <source media="(max-width:1023px)" srcset="./assets/img/ceo-tablet.jpg">
-              <img src="./assets/img/ceo.jpg" alt="代表メッセージ">
-            </picture>
-          </div>
-        </div>
-        <h3 class="c-interview__mess">自分の作品として最低でも50年は施工場所が残る仕事です。<br>
-          大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br>
-          とても嬉しくて遣り甲斐のある仕事です。<br>
-        </h3>
-        <p class="c-interview__signal">
-          <span class="c-interview__unit">株式会社ENTEX</span>
-          <span class="c-interview__unit">代表取締役社長</span>
-          <span class="c-interview__unit">遠藤 剛</span>
-        </p>
-        <p class="c-interview__origin">社名の由来</p>
-        <div class="c-interview__bottom">
-          <picture class="c-interview__logo">
-            <source media="(max-width:767px)" srcset="./assets/img/logo-sp.jpg">
-            <source media="(max-width:1023px)" srcset="./assets/img/logo-tablet.jpg">
-            <img src="./assets/img/logo.jpg" alt="社名の由来">
-          </picture>
-          <div class="c-interview__explan">
-            <p>
-              <span>EN</span>
-              <span>当社代表「遠藤(Endo)」の頭文字</span>
-            </p>
-            <p>
-              <span>TE</span>
-              <span>テクノロジー(技術)</span>
-            </p>
-            <p>
-              <span>X</span>
-              <span>無限に成長すると言う意味のX</span>
-            </p>          
+          <h3 class="c-interview__mess">自分の作品として最低でも50年は施工場所が残る仕事です。<br>
+            大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br>
+            とても嬉しくて遣り甲斐のある仕事です。<br>
+          </h3>
+          <p class="c-interview__signal">
+            <span class="c-interview__unit">株式会社ENTEX</span>
+            <span class="c-interview__unit">代表取締役社長</span>
+            <span class="c-interview__unit">遠藤 剛</span>
+          </p>
+          <p class="c-interview__origin">社名の由来</p>
+          <div class="c-interview__bottom">
+            <div class="c-interview__logo">
+              <picture>
+                <source media="(max-width:767px)" srcset="./assets/img/logo-sp.jpg">
+                <source media="(max-width:1023px)" srcset="./assets/img/logo-tablet.jpg">
+                <img src="./assets/img/logo.jpg" alt="社名の由来">
+              </picture>
+            </div>
+            <div class="c-interview__explan">
+              <dl class="c-interview__row">
+                <dt class="c-interview__colleft">EN</dt>
+                <dd class="c-interview__colright">当社代表「遠藤(Endo)」の頭文字</dd>
+              </dl>
+              <dl class="c-interview__row">
+                <dt class="c-interview__colleft">TE</dt>
+                <dd class="c-interview__colright">テクノロジー(技術)</dd>
+              </dl>
+              <dl class="c-interview__row">
+                <dt class="c-interview__colleft">X</dt>
+                <dd class="c-interview__colright">無限に成長すると言う意味のX</dd>
+              </dl>
+            </div>
           </div>
         </div>
       </div>
@@ -344,10 +351,79 @@
     <!-- end interview -->
     <!-- start recruit -->
     <section class="c-recruit" id="recruit">
+      <div class="c-recruit__main">
+        <div class="c-recruit__top">
+          <h2 class="c-recruit__title">採用情報</h2>
+          <p class="c-recruit__desc">
+            株式会社エンテックスでは、下記の人材を募集しています。<br>
+            詳しくは募集要項をご確認ください。
+          </p>
+        </div>
+        <div class="c-recruit__tabs">
+          <div class="c-recruit__tabtop">
+            <input class="c-recruit__input" type="radio" hidden name="tabs" id="recruit_1" checked>
+            <label class="c-recruit__label c-recruit__first" for="recruit_1">新卒採用</label>
+            <input class="c-recruit__input" type="radio" hidden name="tabs" id="recruit_2">
+            <label class="c-recruit__label c-recruit__second" for="recruit_2">中途採用</label>
+          </div>
+          <div class="c-recruit__tab c-recruit__tabblue">
+            <% if (typeof recruit !='undefined' ) { %>
+              <% recruit.tab1 && recruit.tab1.forEach(tab=> { %>
+                <div class="c-recruit__row">
+                  <div class="c-recruit__colleft">
+                    <%= tab.th %>
+                  </div>
+                  <div class="c-recruit__colright">
+                    <%- tab.td %>
+                  </div>
+                </div>
+                <% }) %>
+                  <% } %>
+                    <div class="c-recruit__btns">
+                      <a class="c-recruit__btn" href="#">
+                        <img class="c-recruit__btnimg" src="./assets/img/assignment.svg" alt="高校生の方はこちら">
+                        <span class="c-recruit__btntxt">高校生の方はこちら</span>
+                      </a>
+                      <a class="c-recruit__btn" href="#">
+                        <img class="c-recruit__btnimg" src="./assets/img/assignment.svg" alt="高校生以外の方はこちら">
+                        <span class="c-recruit__btntxt">高校生以外の方はこちら</span>
+                      </a>
+                    </div>
+          </div>
+          <div class="c-recruit__tab c-recruit__tabblack">
+            <% if (typeof recruit !='undefined' ) { %>
+              <% recruit.tab2 && recruit.tab2.forEach(tab=> { %>
+                <div class="c-recruit__row">
+                  <div class="c-recruit__colleft">
+                    <%= tab.th %>
+                  </div>
+                  <div class="c-recruit__colright">
+                    <%- tab.td %>
+                  </div>
+                </div>
+                <% }) %>
+                  <% } %>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end recruit -->
     <!-- start company -->
     <section class="c-company" id="company">
+      <h2 class="c-company__title">会社情報</h2>
+      <table class="c-company__table">
+        <% if (typeof company !='undefined' ) { %>
+          <% company.main && company.main.forEach(tab=> { %>
+            <tr class="c-company__tr">
+              <th class="c-company__th">
+                <%= tab.th %>
+              </th>
+              <td class="c-company__td">
+                <%- tab.td %>
+              </td>
+            </tr>
+        <% })} %>
+      </table>
     </section>
     <!-- end company -->
   </main>

@@ -1,0 +1,211 @@
+.c-works {
+    margin: 100px auto 0;
+
+    .c-work__top {
+        margin-bottom: 60px;
+    }
+
+    .c-works__main {
+        width: 100%;
+        display: flex;
+        margin-top: 55px;
+    }
+
+    .c-works__left {
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 10px;
+    }
+
+    .c-works__right {
+        width: 57%;
+        padding: 7% 0 0 3%;
+        background-color: #eff3f5;
+    }
+
+    .c-works__rightmain {
+        counter-reset: number;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    .c-works__item {
+        display: flex;
+        max-width: 560px;
+        width: 100%;
+        background-color: $main-color;
+        margin-bottom: 21px;
+
+        &::before {
+            counter-increment: number;
+            content: counter(number);
+            display: block;
+            margin: auto;
+            color: $text-color;
+            text-align: center;
+            max-width: 54px;
+            width: 100%;
+        }
+    }
+
+    .c-works__feature {
+        width: 90%;
+        max-width: 506px;
+        background-color: $text-color;
+        border: 1px solid $main-color;
+        display: block;
+        padding: 2% 4%;
+    }
+
+    .c-works__media {
+        margin: 100px auto 0;
+    }
+
+    .c-works__mediamain {
+        margin: 40px auto 0;
+        padding: 40px;
+        display: flex;
+        flex-flow: row wrap;
+        height: 642px;
+        max-width: 880px;
+        width: 100%;
+        border: 1px solid $main-color;
+    }
+
+    .c-works__mediatop {
+        text-align: center;
+    }
+
+    .c-works__col {
+        width: 50%;
+        flex-basis: 50%;
+        height: 560px;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        &:last-child {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .c-works__photo {
+        position: relative;
+        width: calc(50% - 21px);
+        height: 120px;
+        margin: 0 0 21px 21px;
+
+        &:nth-child(7),
+        &:nth-child(8) {
+            margin-bottom: 0;
+        }
+
+        &:hover>.c-works__pickup {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    .c-works__title {
+        margin-top: 100px;
+        color: $main-color;
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .c-works__subtitle {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        color: $main-color;
+        line-height: 1.2;
+    }
+
+    .c-works__mediatitle {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        color: $main-color;
+        line-height: 1.5;
+    }
+
+    .c-works__desc {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+        color: $subtext-color;
+        text-align: center;
+    }
+
+    .c-works__descsubtitle {
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.4px;
+        line-height: 1.5;
+        color: $subtext-color;
+        margin: 28px 0;
+    }
+
+    .c-works__feature {
+        color: $main-color;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .c-works__mediadesc {
+        color: $subtext-color;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+    }
+
+    .c-works__pickup {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #005384;
+        text-align: center;
+        letter-spacing: 0.4px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.4;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: url("./assets/img/zoom-in.svg");
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .c-works__img {
+        object-fit: cover;
+        max-width: 400px;
+        width: 100%;
+    }
+}
