@@ -1,8 +1,8 @@
 .c-interview {
-    margin: 100px auto 0;
+    margin: 105px auto 0;
 
     .c-interview__list {
-        margin: 47px auto 100px;
+        margin: 53px auto 141px;
         max-width: 960px;
         width: 100%;
         display: flex;
@@ -27,29 +27,54 @@
                 opacity: 1;
             }
         }
+
+        &:nth-child(2) {
+            .c-interview__intro {
+                transform: translateX(4px);
+            }
+
+            .c-interview__text {
+                transform: translate(5px, 2px);
+            }
+        }
+
+        &:nth-child(3) {
+            .c-interview__text {
+                transform: translate(5px, 2px);
+            }
+        }
+    }
+
+    .c-interview__avatar {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .c-interview__info {
         background-color: $main-color;
-        margin: auto 10px;
-        padding: 3% 6% 4%;
+        margin: auto 7px;
+        padding: 3% 6% 4.2%;
         display: flex;
 
         &::before {
             content: url("./assets/img/arrow-circle.svg");
             margin: auto 0;
+            display: inline-block;
+            transform: translateY(4px);
         }
     }
 
     .c-interview__text {
-        padding-left: 4%;
+        padding-left: 6.3%;
+        transform: translateY(2px);
     }
 
     .c-interview__message {
         width: 100%;
         margin: 0 auto;
         background-color: $main-color;
-        padding: 7% 10%;
+        padding: 8.5% 10% 10%;
     }
 
     .c-interview__messwrap {
@@ -69,10 +94,11 @@
 
     .c-interview__messimg {
         flex-basis: 29%;
+        margin-top: -0.5%;
     }
 
     .c-interview__unit {
-        margin-right: 10px;
+        margin-right: 17px;
     }
 
     .c-interview__bottom {
@@ -85,11 +111,12 @@
     .c-interview__logo {
         max-width: 308px;
         width: 100%;
-        margin-right: 7.2%;
+        margin-right: 7.7%;
     }
 
     .c-interview__row {
         display: flex;
+        margin-bottom: 22px;
     }
 
     .c-interview__title {
@@ -99,6 +126,7 @@
         color: $main-color;
         line-height: 1;
         text-align: center;
+        transform: translateX(1px);
     }
 
     .c-interview__messtitle {
@@ -107,7 +135,7 @@
         color: $text-color;
         letter-spacing: 2.5px;
         line-height: 1;
-        margin-bottom: 55px;              
+        margin-bottom: 54px;              
     }
 
     .c-interview__quote {
@@ -116,7 +144,7 @@
         font-size: 2.4rem;
         letter-spacing: 0.6px;
         line-height: 1;
-        margin-bottom: 40px;
+        margin-bottom: 34px;
     }
 
     .c-interview__mess {
@@ -124,11 +152,12 @@
         font-weight: 500;
         font-size: 2.4rem;
         letter-spacing: 0.5px;
-        line-height: 1.8;
+        line-height: 1.9;
+        margin-top: 23px;
     }
 
     .c-interview__desc {
-        margin-top: 19px;
+        margin-top: 14px;
         color: $subtext-color;
         font-size: 1.6rem;
         font-weight: 400;
@@ -170,7 +199,7 @@
         font-size: 1.8rem;
         letter-spacing: 0.4px;
         font-weight: 600;
-        padding: 20px 25px 15px;
+        padding: 16px 35px 15px 21px;
     }
 
     .c-interview__name {
@@ -194,12 +223,12 @@
         font-weight: 300;
         font-size: 1.6rem;
         letter-spacing: 0.4px;
-        line-height: 1.6;
-        margin-bottom: 40px;
+        line-height: 1.73;
+        margin-bottom: 29px;
     }
 
     .c-interview__signal {
-        margin-top: 20px;
+        margin-top: 29px;
         color: $text-color;
         font-size: 2.2rem;
         font-weight: 500;
@@ -214,7 +243,7 @@
         line-height: 1;
         color: $text-color;
         margin-top: 60px;
-        margin-bottom: 53px;                                                        
+        margin-bottom: 52px;                                                        
     }
 
     .c-interview__colleft {
@@ -222,8 +251,8 @@
         font-size: 2.4rem;
         font-weight: 500;
         letter-spacing: 0.6px;
-        line-height: 1.7;
-        width: 44px;    
+        line-height: 1;
+        width: 38px;    
     }
 
     .c-interview__colright {
@@ -231,7 +260,7 @@
         font-size: 2.4rem;
         font-weight: 500;
         letter-spacing: 0.6px;
-        line-height: 1.7;
+        line-height: 1;
 
         &::before {
             content: "";
@@ -239,11 +268,13 @@
             background-color: $text-color;
             width: 62px;
             height: 1px;
-            margin: 0 10px 0 18px;
+            margin: 0 16px 0 18px;
+            transform: translateY(-7px);
         }
     }
 
     .c-interview__ava {
         position: relative;
+        height: 390px;
     }
 }

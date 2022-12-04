@@ -8,11 +8,11 @@
     .c-works__main {
         width: 100%;
         display: flex;
-        margin-top: 55px;
+        margin-top: 60px;
     }
 
     .c-works__left {
-        width: 43%;
+        width: 43.3%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -21,7 +21,7 @@
 
     .c-works__right {
         width: 57%;
-        padding: 7% 0 0 3%;
+        padding: 8.1% 0 0 3.5%;
         background-color: #eff3f5;
     }
 
@@ -29,7 +29,7 @@
         counter-reset: number;
         display: flex;
         flex-flow: column wrap;
-        align-items: flex-start;
+        align-items: flex-start;        
     }
 
     .c-works__item {
@@ -48,6 +48,28 @@
             text-align: center;
             max-width: 54px;
             width: 100%;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        &:first-child {
+            .c-works__feature {
+                &:first-child {
+                    padding: 2.5% 4%;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                transform: translate(-1px, -2px);
+            }
+        }
+
+        &:nth-child(n + 4) {
+            .c-works__feature {
+                padding: 2.8% 2.9% 2.3%;
+            }
         }
     }
 
@@ -57,11 +79,16 @@
         background-color: $text-color;
         border: 1px solid $main-color;
         display: block;
-        padding: 2% 4%;
+        padding: 2.4% 2.9% 2.6%;
+        color: $main-color;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        font-size: 1.8rem;
+        font-weight: 300;
     }
 
     .c-works__media {
-        margin: 100px auto 0;
+        margin: 97px auto 0;
     }
 
     .c-works__mediamain {
@@ -121,7 +148,7 @@
         font-size: 3.4rem;
         font-weight: 500;
         letter-spacing: 2.5px;
-        line-height: 2;
+        line-height: 1.1;
         text-align: center;
     }
 
@@ -136,16 +163,17 @@
     .c-works__mediatitle {
         font-size: 3.4rem;
         font-weight: 500;
-        letter-spacing: 2.5px;
+        letter-spacing: 1.7px;
         color: $main-color;
-        line-height: 1.5;
+        line-height: 1;
     }
 
     .c-works__desc {
+        margin-top: 14px;
         font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: 0.4px;
-        line-height: 1.8;
+        line-height: 1.7;
         color: $subtext-color;
         text-align: center;
     }
@@ -156,15 +184,7 @@
         letter-spacing: 0.4px;
         line-height: 1.5;
         color: $subtext-color;
-        margin: 28px 0;
-    }
-
-    .c-works__feature {
-        color: $main-color;
-        line-height: 1.2;
-        letter-spacing: 0.5px;
-        font-size: 1.8rem;
-        font-weight: 300;
+        margin: 14px 0 33px;
     }
 
     .c-works__mediadesc {
@@ -172,7 +192,8 @@
         font-weight: 400;
         font-size: 1.6rem;
         letter-spacing: 0.4px;
-        line-height: 1.8;
+        line-height: 1;
+        margin-top: 25px;
     }
 
     .c-works__pickup {

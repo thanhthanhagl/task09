@@ -18,7 +18,7 @@
     }
 
     .c-about__left {
-        width: 57.8%;
+        width: 58%;
         padding: 12.2% 0 16% 13%;
 
         @include tab {
@@ -33,7 +33,7 @@
     .c-about__right {
         width: 58.3%;
         margin-right: -23.7%;
-        padding: 100px 0;
+        padding: 100px 0 80px;
 
         @include sp {
             margin: 0 auto;
@@ -72,6 +72,11 @@
         color: $text-color;
         margin-bottom: 25px;
         line-height: 1.8;
+    }
+
+    .c-about__span {
+        display: block;
+        margin-top: -1px;
     }
 
     .c-about__img {

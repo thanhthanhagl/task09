@@ -11,15 +11,15 @@
         <picture class="c-mainvisual__img c-mainvisual__zoomin">
           <source media="(max-width: 1023px)" srcset="../assets/img/entex_mainvisual1tablet.jpg">
           <source media="(max-width: 767px)" srcset="../assets/img/entex_mainvisual1sp.jpg">
-          <img src="../assets/img/entex_mainvisual1.jpg" alt="若い力を発揮できる環境がココにはある。">
+          <img class="c-mainvisual__imgitem" src="../assets/img/entex_mainvisual1.jpg" alt="若い力を発揮できる環境がココにはある。">
         </picture>
         <picture class="c-mainvisual__img c-mainvisual__tobottom">
           <source media="(max-width: 767px)" srcset="../assets/img/entex_mainvisual1sp.jpg">
-          <img src="../assets/img/entex_mainvisual2.jpg" alt="若い力を発揮できる環境がココにはある。">
+          <img class="c-mainvisual__imgitem" src="../assets/img/entex_mainvisual2.jpg" alt="若い力を発揮できる環境がココにはある。">
         </picture>
         <picture class="c-mainvisual__img c-mainvisual__toright">
           <source media="(max-width: 767px)" srcset="../assets/img/entex_mainvisual1sp.jpg">
-          <img src="../assets/img/entex_mainvisual3.jpg" alt="若い力を発揮できる環境がココにはある。">
+          <img class="c-mainvisual__imgitem" src="../assets/img/entex_mainvisual3.jpg" alt="若い力を発揮できる環境がココにはある。">
         </picture>
       </div>
       <div class="c-mainvisual__inner">
@@ -41,14 +41,14 @@
       <div class="c-about__main">
         <div class="c-about__left">
           <h2 class="c-about__title">私たちについて</h2>
-          <p class="c-about__p">多能工と呼ばれるプロの職人集団が、外構工事（家の外回りの工事）を中心に事業を展開する会社です。 多能工とは、様々な建設作業が出来る職人の事を意味します。</p>
+          <p class="c-about__p">多能工と呼ばれるプロの職人集団が、外構工事（家の外回りの工事）を中心に事業を展開する会社です。<br>多能工とは、様々な建設作業が出来る職人の事を意味します。</p>
           <p class="c-about__p">当社の職人は、重機作業、鉄筋作業、型枠作業、左官作業、電気工事、金物取付作業、土木作業植栽作業、設備作業の全てを1人で行ないます。</p>
           <p class="c-about__p">
             <span>体力仕事も少なからず存在しますが、ベトナム人研修生や最新の道具が手助けしますので、昔よりも作業内容は簡略化されています。</span>
             <br>
-            <span>当社では今後も最新設備を取り入れ、作業負担の軽減化を進めていく予定です。</span>
+            <span class="c-about__span">当社では今後も最新設備を取り入れ、作業負担の軽減化を進めていく予定です。</span>
           </p>
-          <p class="c-about__p">た、最新道具が発展した現在でも多能工職人になることは難しいのですが、 当社は関西の中でもとくに職人の在籍率が高い会社でもあります。</p>
+          <p class="c-about__p">また、最新道具が発展した現在でも多能工職人になることは難しいのですが、 当社は関西の中でもとくに職人の在籍率が高い会社でもあります。</p>
           <p class="c-about__p">今では解体工事、リフォーム工事、新築工事なども施工する会社となり、より深く様々な作業を身に付ける事ができる未来発展型の会社です。</p>
         </div>
         <div class="c-about__right">
@@ -209,23 +209,26 @@
           <h3 class="c-career__welfare">充実した福利厚生サービス</h3>
           <ul class="c-career__welfarelist">
             <li class="c-career__welfareitem">遠方から弊社に入社される人は、ENTEX本社の上に社宅(社員寮)があります。
-              <span class="c-career__welfarenote">※現在は満室のため、近くのワンルームから（自転車通勤圏内）通勤していただきます。</span>
+              <span class="c-career__welfarenote">
+                <span class="c-career__welfareicon">※</span>現在は満室のため、近くのワンルームから（自転車通勤圏内）通勤していただきます。
+              </span>
             </li>
-            <li class="c-career__welfareitem">年1回社員旅行を開催(参加希望者のみ)
-              <span class="c-career_-welfarenote">※社員旅行積立金3,000円（会社が旅費の半分以上を負担）</span>
+            <li class="c-career__welfareitem">年1回社員旅行を開催<span class="c-career__welfareitemsub">(参加希望者のみ)</span>
+              <span class="c-career__welfarenote"><span class="c-career__welfareicon">※</span>社員旅行積立金3,000円（会社が旅費の半分以上を負担）</span>
             </li>
-            <li class="c-career__welfareitem">社会保険完備<span class="c-career__welfareitemsub">(雇用保険、労災保険、健康保険、厚生年金）</span>
+            <li class="c-career__welfareitem">社会保険完備
+              <span class="c-career__welfareitemsub">(雇用保険<span class="u-comma">、</span>労災保険<span class="u-comma">、</span>健康保険<span class="u-comma">、</span>厚生年金）</span>
             </li>
             <li class="c-career__welfareitem">希望者参加型の食事会<span class="c-career__welfareitemsub">(費用は会社負担)</span></li>
             <li class="c-career__welfareitem">各種手当も充実
               <ul class="c-career__welfaresubitem">
-                <li>皆勤手当：5,000円</li>
-                <li>雨天手当：1,000円</li>
-                <li>固定休日手当：5日分（賃金単価による）</li>
-                <li>資格手当</li>
-                <li>残業、休日手当</li>
-                <li>技能手当</li>
-                <li>通勤手当：月3万円まで</li>
+                <li class="c-career__welfaresubitemtext">皆勤手当：5,000円</li>
+                <li class="c-career__welfaresubitemtext">雨天手当：1,000円</li>
+                <li class="c-career__welfaresubitemtext">固定休日手当：5日分（賃金単価による）</li>
+                <li class="c-career__welfaresubitemtext">資格手当</li>
+                <li class="c-career__welfaresubitemtext">残業、休日手当</li>
+                <li class="c-career__welfaresubitemtext">技能手当</li>
+                <li class="c-career__welfaresubitemtext">通勤手当：月3万円まで</li>
               </ul>
             </li>
             <li class="c-career__welfareitem">昇給あり</li>
@@ -263,7 +266,7 @@
               <div class="c-interview__ava">
                 <picture>
                   <source media="(max-width:767px" srcset="<%= person.avasp %>">
-                  <img src="<%= person.ava %>" alt="<%= person.name %>">
+                  <img class="c-interview__avatar" src="<%= person.ava %>" alt="<%= person.name %>">
                 </picture>
                 <p class="c-interview__interview">interview</p>
               </div>
