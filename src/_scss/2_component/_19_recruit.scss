@@ -2,23 +2,20 @@
     .c-recruit__main {
         max-width: 960px;
         width: 100%;
-        margin: 5.3% auto;
+        margin: 8.1% auto;
     }
 
     .c-recruit__tabs {
-        margin-top: 53px;        
+        margin-top: 55px;        
     }
 
     .c-recruit__tabtop {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
 
     .c-recruit__tab {
-        flex: 1;
-        flex-grow: 1;
         width: 100%;
         height: 100%;
         display: none;
@@ -29,7 +26,7 @@
     .c-recruit__first {
         border-top: 1px solid $main-color;
         border-left: 1px solid $main-color;
-        border-radius: 10px 0 0;
+        border-radius: 20px 0 0;
         color: $main-color;
 
         &.active {
@@ -45,7 +42,7 @@
     .c-recruit__second {
         border-top: 1px solid #404141;
         border-right: 1px solid #404141;
-        border-radius: 0 10px 0 0;
+        border-radius: 0 20px 0 0;
         color: $subtext-color;
 
         &.active {
@@ -132,22 +129,22 @@
         color: $main-color;
         font-size: 4.4rem;
         font-weight: 500;
-        letter-spacing: 3.3px;
+        letter-spacing: 3.2px;
         line-height: 1.1;
     }
 
     .c-recruit__desc {
-        margin-top: 23px;
+        margin-top: 15px;
         font-weight: 400;
         font-size: 1.6rem;
         letter-spacing: 0.4px;
-        line-height: 1.7;
+        line-height: 1.8;
         color: $subtext-color;
         text-align: center;
     }
 
     .c-recruit__label {
-        flex: 1;
+        width: 50%;
         cursor: pointer;
         text-align: center;
         font-size: 2.6rem;
@@ -155,8 +152,17 @@
         letter-spacing: 0.6px;
         line-height: 1;
         position: relative;
-        top: 10px;
+        top: 0;
         padding: 32px 0 29px;
+        overflow: hidden;
+
+        &.active {
+            width: calc(50% + 77px);
+        }
+    }
+
+    .c-recruit__spantext {
+        transform: translate(-17px, 10px);
     }
 
     .c-recruit__colleft {

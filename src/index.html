@@ -214,10 +214,12 @@
               </span>
             </li>
             <li class="c-career__welfareitem">年1回社員旅行を開催<span class="c-career__welfareitemsub">(参加希望者のみ)</span>
-              <span class="c-career__welfarenote"><span class="c-career__welfareicon">※</span>社員旅行積立金3,000円（会社が旅費の半分以上を負担）</span>
+              <span class="c-career__welfarenote"><span
+                  class="c-career__welfareicon">※</span>社員旅行積立金3,000円（会社が旅費の半分以上を負担）</span>
             </li>
             <li class="c-career__welfareitem">社会保険完備
-              <span class="c-career__welfareitemsub">(雇用保険<span class="u-comma">、</span>労災保険<span class="u-comma">、</span>健康保険<span class="u-comma">、</span>厚生年金）</span>
+              <span class="c-career__welfareitemsub">(雇用保険<span class="u-comma">、</span>労災保険<span
+                  class="u-comma">、</span>健康保険<span class="u-comma">、</span>厚生年金）</span>
             </li>
             <li class="c-career__welfareitem">希望者参加型の食事会<span class="c-career__welfareitemsub">(費用は会社負担)</span></li>
             <li class="c-career__welfareitem">各種手当も充実
@@ -262,7 +264,7 @@
       <div class="c-interview__list">
         <% if (typeof interview !='undefined' ) { %>
           <% interview.main && interview.main.forEach (person=>{ %>
-            <div class="c-interview__item">
+            <div class="c-interview__item" data-open="<%= person.id %>">
               <div class="c-interview__ava">
                 <picture>
                   <source media="(max-width:767px" srcset="<%= person.avasp %>">
@@ -365,9 +367,11 @@
         <div class="c-recruit__tabs">
           <div class="c-recruit__tabtop">
             <input class="c-recruit__input" type="radio" hidden name="tabs" id="recruit_1" checked>
-            <label class="c-recruit__label c-recruit__first" for="recruit_1">新卒採用</label>
+            <label class="c-recruit__label c-recruit__first" for="recruit_1"><span
+                class="c-recruit__spantext">新卒採用</span></label>
             <input class="c-recruit__input" type="radio" hidden name="tabs" id="recruit_2">
-            <label class="c-recruit__label c-recruit__second" for="recruit_2">中途採用</label>
+            <label class="c-recruit__label c-recruit__second" for="recruit_2"><span
+                class="c-recruit__spantext">中途採用</span></label>
           </div>
           <div class="c-recruit__tab c-recruit__tabblue">
             <% if (typeof recruit !='undefined' ) { %>
@@ -425,9 +429,69 @@
                 <%- tab.td %>
               </td>
             </tr>
-        <% })} %>
+            <% })} %>
       </table>
     </section>
     <!-- end company -->
+    <!-- start lightbox -->
+    <div class="c-lightbox">
+      <div class="c-lightbox__overlay">
+        <div class="c-lightbox__inner">
+          <img class="c-lightbox__img" src="./assets/img/media1.jpg" alt="fence">
+          <p class="c-lightbox__close">閉じる</p>
+        </div>
+      </div>
+    </div>
+    <!-- end lightbox -->
+    <!-- start popup -->
+    <div class="c-popup">
+      <div class="c-popup__overlay">
+        <div class="c-popup__inner">
+          <% if (typeof interview !='undefined' ) { %>
+            <% interview.main && interview.main.forEach (person=>{ %>
+              <div class="c-popup__box" data-popup="<%= person.id %>">
+                <h2 class="c-popup__title">
+                  <%= person.intro %>
+                </h2>
+                <div class="c-popup__main">
+                  <div class="c-popup__left">
+                    <div class="c-popup__ava">
+                      <picture>
+                        <source media="(max-width:767px" srcset="<%= person.avasp %>">
+                        <img class="c-popup__avatar" src="<%= person.ava %>" alt="<%= person.name %>">
+                      </picture>
+                    </div>
+                    <div class="c-popup__info">
+                      <div class="c-popup__text">
+                        <p class="c-popup__name">
+                          <%= person.name %>
+                        </p>
+                        <p class="c-popup__position">
+                          <%= person.position %>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-popup__right">
+                    <% if (typeof person.qna !='undefined' ) { %>
+                      <% person.qna.i && person.qna.i.forEach (p=>{ %>
+                        <dl>
+                          <dt class="c-popup__question">
+                            <%= p.q %>
+                          </dt>
+                          <dd class="c-popup__answer">
+                            <%- p.a %>
+                          </dd>
+                        </dl>
+                        <% })} %>
+                        <p class="c-popup__close">閉じる</p>
+                  </div>
+                </div>                
+              </div>
+              <% })} %>
+        </div>
+      </div>
+    </div>
+    <!-- end popup -->
   </main>
   <!-- @@content -->

@@ -1,0 +1,90 @@
+.c-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    padding: 30px 10px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: scale(0, 0);
+
+    &.is-open {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    .c-lightbox__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background: rgba(255, 255, 255, 0.84);
+    }
+
+    .c-lightbox__inner {
+        max-width: 960px;
+        width: 100%;
+        background: #fff;
+        border: 4px #0080cc solid;
+        text-align: center;
+        padding: 40px;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .c-lightbox__img {
+        width: 840px;
+        height: 600px;
+    }
+
+    .c-lightbox__close {
+        background-color: $main-color;
+        color: $text-color;
+        margin: 40px auto 0;
+        max-width: 117px;
+        width: 100%;
+        border-radius: 9px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        padding: 11px 0 9px 18px;
+        position: relative;
+
+        &::before {
+            content: "";
+            background: #fff;
+            width: 10px;
+            height: 2px;
+            transform: translateY(-2px) rotate(45deg);
+            position: absolute;
+            left: 25px;
+            top: calc(50% + 2px);
+            display: inline-block;
+        }
+
+        &::after {
+            content: "";
+            background: #fff;
+            width: 10px;
+            height: 2px;
+            transform: translateY(-2px) rotate(-45deg);
+            position: absolute;
+            left: 25px;
+            top: calc(50% + 3px);
+            display: inline-block;
+        }
+    }
+}

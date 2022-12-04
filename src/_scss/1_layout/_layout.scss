@@ -8,6 +8,12 @@ body {
     margin: 0 auto;
     line-height: 1.5;
     scroll-behavior: smooth;
+
+    &.is-fixed {
+        overflow: hidden;
+        touch-action: none;
+        height: 100vh;
+    }
 }
 
 //-------------------------------------------------------
