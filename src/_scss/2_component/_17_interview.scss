@@ -1,13 +1,21 @@
 .c-interview {
     margin: 105px auto 0;
 
+    @include tab {
+        margin: 58px auto 0;
+    }
+
     .c-interview__list {
         margin: 52px auto 141px;
         max-width: 960px;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
+
+        @include tab {
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
     }
 
     .c-interview__item {
@@ -15,6 +23,11 @@
         max-width: 314px;
         height: 519px;
         width: 100%;
+
+        @include tab {
+            max-width: 229px;
+            height: 400px;
+        }
 
         &:hover {
             cursor: pointer;
@@ -31,16 +44,28 @@
         &:nth-child(2) {
             .c-interview__intro {
                 transform: translateX(4px);
+
+                @include tab {
+                    transform: translateX(0);
+                }
             }
 
             .c-interview__text {
                 transform: translate(5px, 2px);
+
+                @include tab {
+                    transform: translate(0, 0);
+                }
             }
         }
 
         &:nth-child(3) {
             .c-interview__text {
                 transform: translate(5px, 2px);
+
+                @include tab {
+                    transform: translate(0, 0);
+                }
             }
         }
     }
@@ -68,6 +93,10 @@
     .c-interview__text {
         padding-left: 6.3%;
         transform: translateY(2px);
+
+        @include tab {
+            padding-left: 3%;
+        }
     }
 
     .c-interview__message {
@@ -75,6 +104,10 @@
         margin: 0 auto;
         background-color: $main-color;
         padding: 8.4% 10% 9.8%;
+
+        @include tab {
+            padding: 59px 20px;
+        }
     }
 
     .c-interview__messwrap {
@@ -111,12 +144,21 @@
         flex-wrap: wrap;
         margin: 0 auto;
         padding-left: 4.2%;
+
+        @include tab {
+            padding-left: 0;
+        }
     }
 
     .c-interview__logo {
         max-width: 308px;
         width: 100%;
         margin-right: 7.4%;
+
+        @include tab {
+            max-width: 247px;
+            margin-right: 36px;
+        }
     }
 
     .c-interview__row {
@@ -132,6 +174,12 @@
         line-height: 1;
         text-align: center;
         transform: translateX(1px);
+
+        @include tab {
+            font-size: 3rem;
+            letter-spacing: 1.6px;
+            line-height: 1.5;
+        }
     }
 
     .c-interview__messtitle {
@@ -140,7 +188,7 @@
         color: $text-color;
         letter-spacing: 2.5px;
         line-height: 1;
-        margin-bottom: 56px;              
+        margin-bottom: 56px;
     }
 
     .c-interview__quote {
@@ -150,6 +198,11 @@
         letter-spacing: 0.6px;
         line-height: 1;
         margin-bottom: 34px;
+
+        @include tab {
+            font-size: 2rem;
+            letter-spacing: 1.1px;
+        }
     }
 
     .c-interview__mess {
@@ -159,6 +212,12 @@
         letter-spacing: 0.5px;
         line-height: 1.9;
         margin-top: 23px;
+
+        @include tab {
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+            line-height: 2;
+        }
     }
 
     .c-interview__desc {
@@ -169,6 +228,12 @@
         letter-spacing: 0.3px;
         line-height: 1.7;
         text-align: center;
+
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
     }
 
     .c-interview__interview {
@@ -205,6 +270,13 @@
         letter-spacing: 0.4px;
         font-weight: 600;
         padding: 16px 35px 15px 21px;
+
+        @include tab {
+            font-size: 1.5rem;
+            letter-spacing: 0.4px;
+            line-height: 1.7;
+            padding: 15px 10px 15px 8px;
+        }
     }
 
     .c-interview__name {
@@ -213,6 +285,12 @@
         color: $text-color;
         letter-spacing: 0.5px;
         line-height: 1.5;
+
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.4px;
+            line-height: 1.5;
+        }
     }
 
     .c-interview__position {
@@ -221,6 +299,12 @@
         letter-spacing: 0.4px;
         color: $text-color;
         line-height: 2;
+
+        @include tab {
+            font-size: 1.2rem;
+            letter-spacing: 0.3px;
+            line-height: 1.8;
+        }
     }
 
     .c-interview__p {
@@ -239,6 +323,11 @@
         font-weight: 500;
         letter-spacing: 0.5px;
         line-height: 1;
+
+        @include tab {
+            font-size: 1.8rem;
+            letter-spacing: 0.4px;
+        }
     }
 
     .c-interview__origin {
@@ -248,7 +337,7 @@
         line-height: 1;
         color: $text-color;
         margin-top: 60px;
-        margin-bottom: 52px;                                                        
+        margin-bottom: 52px;
     }
 
     .c-interview__colleft {
@@ -258,7 +347,12 @@
         letter-spacing: 0;
         line-height: 1;
         width: 38px;
-        transform: translateY(-1px);  
+        transform: translateY(-1px);
+
+        @include tab {
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+        }
     }
 
     .c-interview__colright {
@@ -268,6 +362,11 @@
         letter-spacing: 0.4px;
         line-height: 1;
         transform: translateY(1px);
+
+        @include tab {
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+        }
 
         &::before {
             content: "";
@@ -283,5 +382,9 @@
     .c-interview__ava {
         position: relative;
         height: 390px;
+
+        @include tab {
+            height: 278px;
+        }
     }
 }

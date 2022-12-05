@@ -24,5 +24,27 @@
         <span class="c-header__txtrecruit">募集要項</span>
       </a>
     </div>
+    <div class="c-header__iconmenu">
+      <span class="c-header__line"></span>
+      <span class="c-header__line"></span>
+      <span class="c-header__line"></span>
+    </div>
+    <div class="c-header__gnavmb">      
+      <ul class="c-header__overlay">
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <li class="c-header__navmb">
+              <a class="c-header__linkmb" <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+            </li>
+          <% }) %>
+        <% } %> 
+      </ul>
+      <div class="c-header__btnrecruit c-header__btninner">
+        <a href="#recruit">
+          <img class="c-header__imgrecruitinner" src="./assets/img/assignment.svg" alt="募集要項">
+          <span class="c-header__txtrecruitinner">募集要項</span>
+        </a>
+      </div>
+    </div>
   </nav>  
 </header>

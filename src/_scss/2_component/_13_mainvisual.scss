@@ -10,9 +10,9 @@
         text-align: center;
         width: 48%;
         text-align: left;
-        @include tab{
-            top:46.4%;
-            left:5.1%;
+        @include tab {
+            top: 46.4%;
+            left: 5.1%;
             width: 47%;
         }
     }
@@ -23,9 +23,9 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-        @include tab{
+        @include tab {
             bottom: 12.7%;
-        left: 51.3%;
+            left: 51.3%;
         }
     }
 
@@ -46,11 +46,11 @@
             transform: translateX(-50%);
             content: "";
             background-color: $main-color;
-            @include tab{
+            @include tab {
                 bottom: -147%;
             }
         }
-        @include sp{
+        @include sp {
             font-size: 1.6rem;
         }
     }
@@ -65,12 +65,12 @@
         letter-spacing: 2.5px;
         font-weight: 500;
         line-height: 1.4;
-        @include tab{
+        @include tab {
             font-size: 4rem;
             letter-spacing: 1.8px;
             line-height: 1.3;
         }
-        @include sp{
+        @include sp {
             font-size: 2.8rem;
         }
 
@@ -85,7 +85,7 @@
         width: fit-content;
         padding: 0 5px 0 8px;
         margin-bottom: 16px;
-        @include tab{
+        @include tab {
             padding: 0 9px 0 10px;
             margin-bottom: 14px;
         }
@@ -104,14 +104,14 @@
         left: 9.6%;
         width: 80.1%;
         font-weight: 500;
-        @include tab{
+        @include tab {
             font-size: 2.2rem;
-            padding: 20px 0 19px;  
+            padding: 20px 0 19px;
             letter-spacing: 1.63px;
-            left:4.6%;
+            left: 4.6%;
             width: 90%;          
         }
-        @include sp{
+        @include sp {
             font-size: 1.8rem;
         }
     }
@@ -128,7 +128,7 @@
         width: 100%;
         height: calc(100vh - 115px);
         min-height: 500px;
-        @include tab{
+        @include tab {
             height: calc(100vh - 95px);
         }
     }

@@ -3,6 +3,9 @@
         max-width: 960px;
         width: 100%;
         margin: 8.3% auto;
+        @include tab {
+            padding: 0 20px;
+        }
     }
 
     .c-recruit__tabs {
@@ -21,6 +24,9 @@
         display: none;
         padding: 39px 37px 57px;
         background: #f2f5f7;
+        @include tab {
+            padding: 35px 20px 43px;
+        }
     }
 
     .c-recruit__first {
@@ -119,7 +125,11 @@
         justify-content: space-between;
         margin: 51px auto 0;
         max-width: 741px;
-        width: 100%;    
+        width: 100%;
+        @include tab {
+            margin: 41px auto 0;
+            padding: 0 23px;
+        }
     }
 
     .c-recruit__btnimg {
@@ -140,6 +150,11 @@
         border-radius: 9px;
         max-width: 353px;
         width: 100%;
+        @include tab {
+            max-width: 300px;
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+        }
 
         &:first-child {
             background-color: $main-color;
@@ -204,6 +219,11 @@
         font-weight: 600;
         letter-spacing: 0.5px;
         color: $td-color;
+        @include tab {
+            font-size: 1.6rem;
+            letter-spacing: 0.4px;
+            line-height: 1.875;
+        }
     }
 
     .c-recruit__colright {
@@ -214,5 +234,10 @@
         color: $td-color;
         line-height: 1.9;
         transform: translate(1px, -3px);
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.4px;
+            line-height: 1.875;
+        }
     }
 }

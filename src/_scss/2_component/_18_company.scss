@@ -2,6 +2,10 @@
     margin: 100px auto 51px;
     max-width: 960px;
     width: 100%;
+    @include tab {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
 
     .c-company__title {
         font-size: 4.4rem;
@@ -32,6 +36,11 @@
         width: 29.9%;
         text-align: left;
         vertical-align: top;
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
     }
 
     .c-company__td {
@@ -46,6 +55,11 @@
         letter-spacing: 0.4px;
         line-height: 1.875;
         vertical-align: middle;
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
     }
 
     .c-company__tr {

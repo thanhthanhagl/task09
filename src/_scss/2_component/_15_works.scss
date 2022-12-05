@@ -1,5 +1,8 @@
 .c-works {
     margin: 100px auto 0;
+    @include tab {
+        padding: 0 20px;
+    }
 
     .c-work__top {
         margin-bottom: 60px;
@@ -84,6 +87,11 @@
         letter-spacing: 0.5px;
         font-size: 1.8rem;
         font-weight: 300;
+        @include tab {
+            font-size: 1.6rem;
+            letter-spacing: 0.4px;
+            line-height: 1.4;
+        }
     }
 
     .c-works__media {
@@ -95,10 +103,13 @@
         padding: 40px;
         display: flex;
         flex-flow: row wrap;
-        height: 642px;
         max-width: 880px;
         width: 100%;
         border: 1px solid $main-color;
+        @include tab {
+            padding: 20px;
+            max-width: 730px;
+        }
     }
 
     .c-works__mediatop {
@@ -109,6 +120,9 @@
         width: 50%;
         flex-basis: 50%;
         height: 560px;
+        @include tab {
+            height: 462px;
+        }
 
         video {
             width: 100%;
@@ -129,6 +143,9 @@
         width: calc(50% - 21px);
         height: 120px;
         margin: 0 0 21px 21px;
+        @include tab {
+            height: 99px;
+        }
 
         &:nth-child(7),
         &:nth-child(8) {
@@ -149,6 +166,11 @@
         letter-spacing: 2.5px;
         line-height: 1.1;
         text-align: center;
+        @include tab {
+            font-size: 3rem;
+            line-height: 1.5;
+            letter-spacing: 1.6px;
+        }
     }
 
     .c-works__subtitle {
@@ -157,6 +179,11 @@
         letter-spacing: 2.5px;
         color: $main-color;
         line-height: 1.2;
+        @include tab {
+            font-size: 3rem;
+            letter-spacing: 1.6px;
+            line-height: 1.5;
+        }
     }
 
     .c-works__mediatitle {
@@ -175,6 +202,11 @@
         line-height: 1.7;
         color: $subtext-color;
         text-align: center;
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.3px;
+            line-height: 1.8;
+        }
     }
 
     .c-works__descsubtitle {
@@ -184,6 +216,11 @@
         line-height: 1.5;
         color: $subtext-color;
         margin: 14px 0 34px;
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.3px;
+            line-height: 1.8;
+        }
     }
 
     .c-works__mediadesc {
