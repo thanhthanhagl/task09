@@ -6,11 +6,17 @@
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
     margin: 0 auto;
+    @include tab{
+        padding: 20px 20px 0;
+    }
 
     .c-header__gnav {
         max-width: 1160px;
         width: 100%;
         margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .c-header__logo {
@@ -32,7 +38,14 @@
         width: 58%;
         position: relative;
         left: 2.1%;
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include tab{
+            width: 95%;
+            left:2.7%;
+            margin-top:25px;
+        }
     }
 
     .c-header__link {
@@ -41,6 +54,9 @@
         color: $main-color;
         letter-spacing: 0.3px;
         line-height: 3.5;
+        @include tab{
+            line-height: 2.5;
+        }
 
         &:hover {
             &::after {
@@ -62,17 +78,33 @@
         padding: 10px 0;
         text-align: center;
         margin-top: 2px;
+        @include tab{
+            position: absolute;
+            right: 2.6%;
+            margin-top:0;
+            width: 157px;
+            height: 40px;
+            padding: 5px 0;
+        }
     }
 
     .c-header__imgrecruit {
         transform: translate(-5px, 4px);
+        @include tab{
+            transform: translate(-8px, 6px);
+        }
     }
 
     .c-header__txtrecruit {
         color: $text-color;
         letter-spacing: 2px;
         font-size: 1.8rem;
+        font-weight: 500;
         line-height: 1.7;
+        @include tab{
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
     }
                 
 }

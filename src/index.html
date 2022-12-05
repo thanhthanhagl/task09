@@ -135,7 +135,7 @@
     <section class="c-career" id="career">
       <div class="c-career__top">
         <h2 class="c-career__title">もうすぐ創業50年、<br>
-          あなたのキャリアプランもしっかり考えています。</h2>
+          <span class="c-career__titleedit">あなたのキャリアプランもしっかり考えています。</span></h2>
         <p class="c-career__desc">
           世間では、終身雇用が保証されにくい世の中になってきました。<br>
           その中で、「長く勤めることができる会社」「手に職をつけられる業種」は、キャリア形成にも影響します。<br>
@@ -218,7 +218,7 @@
                   class="c-career__welfareicon">※</span>社員旅行積立金3,000円（会社が旅費の半分以上を負担）</span>
             </li>
             <li class="c-career__welfareitem">社会保険完備
-              <span class="c-career__welfareitemsub">(雇用保険<span class="u-comma">、</span>労災保険<span
+              <span class="c-career__welfareitemsub"> (雇用保険<span class="u-comma">、</span>労災保険<span
                   class="u-comma">、</span>健康保険<span class="u-comma">、</span>厚生年金）</span>
             </li>
             <li class="c-career__welfareitem">希望者参加型の食事会<span class="c-career__welfareitemsub">(費用は会社負担)</span></li>
@@ -295,18 +295,14 @@
             <div class="c-interview__messtext">
               <h3 class="c-interview__quote">「学歴・経験不問。ポテンシャル重視で採用」</h3>
               <p class="c-interview__p">
-                弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっていま
-                す。何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向い
-                て仕事が出来ます。
+                弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっています<span class="c-interview__dot">。</span>何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向いて仕事が出来ます。
               </p>
               <p class="c-interview__p">
-                また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい
-                職場作りを目指しております。<br>
-                メンバー同士、助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。
+                また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい職場作りを目指しております。<br>
+                メンバー同士<span class="c-interview__dot">、</span>助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。
               </p>
               <p class="c-interview__p">
-                昔のように職人は誰でもなれる職業ではありません。身体も頭脳も健全でなければ一流の職人に
-                はなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。
+                昔のように職人は誰でもなれる職業ではありません。身体も頭脳も健全でなければ一流の職人にはなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。
               </p>
             </div>
             <div class="c-interview__messimg">
@@ -437,8 +433,10 @@
     <div class="c-lightbox">
       <div class="c-lightbox__overlay">
         <div class="c-lightbox__inner">
-          <img class="c-lightbox__img" src="./assets/img/media1.jpg" alt="fence">
-          <p class="c-lightbox__close">閉じる</p>
+          <div class="c-lightbox__main">
+            <img class="c-lightbox__img" src="./assets/img/media1.jpg" alt="fence">
+            <p class="c-lightbox__close">閉じる</p>
+          </div>
         </div>
       </div>
     </div>
@@ -449,7 +447,7 @@
         <div class="c-popup__inner">
           <% if (typeof interview !='undefined' ) { %>
             <% interview.main && interview.main.forEach (person=>{ %>
-              <div class="c-popup__box" data-popup="<%= person.id %>">
+              <div class="c-popup__box" id="popup<%= person.id %>">
                 <h2 class="c-popup__title">
                   <%= person.intro %>
                 </h2>
@@ -458,7 +456,7 @@
                     <div class="c-popup__ava">
                       <picture>
                         <source media="(max-width:767px" srcset="<%= person.avasp %>">
-                        <img class="c-popup__avatar" src="<%= person.ava %>" alt="<%= person.name %>">
+                        <img class="c-popup__avatar" src="<%= person.avapp %>" alt="<%= person.name %>">
                       </picture>
                     </div>
                     <div class="c-popup__info">
@@ -484,9 +482,9 @@
                           </dd>
                         </dl>
                         <% })} %>
-                        <p class="c-popup__close">閉じる</p>
+                          <p class="c-popup__close">閉じる</p>
                   </div>
-                </div>                
+                </div>
               </div>
               <% })} %>
         </div>
@@ -495,3 +493,4 @@
     <!-- end popup -->
   </main>
   <!-- @@content -->
+  

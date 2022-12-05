@@ -18,11 +18,12 @@
     }
 
     .c-about__left {
-        width: 58%;
-        padding: 12.2% 0 16% 13%;
+        width: 57.8%;
+        padding: 12.2% 0 15.8% 13%;
 
         @include tab {
-            padding: 92px 0 92px 16px;
+            width: 60.8%;
+            padding: 11.6% 0 0 2.5%;
         }
 
         @include sp {
@@ -31,9 +32,14 @@
     }
 
     .c-about__right {
-        width: 58.3%;
+        width: 58.4%;
         margin-right: -23.7%;
-        padding: 100px 0 80px;
+        padding: 100px 0 75px;
+        @include tab{
+            width: 46%;
+            margin-right: -11.6%;
+            padding: 61px 0 31px;
+        }
 
         @include sp {
             margin: 0 auto;
@@ -55,6 +61,13 @@
             position: absolute;
             top: 19px;
             left: -21px;
+            @include tab{
+                top:15px;
+                left: -17px;
+            }
+            @include sp{
+                z-index: -5;
+            }
         }
     }
 
@@ -63,20 +76,30 @@
         font-size: 3.4rem;
         font-weight: 500;
         letter-spacing: 2.5px;
-        margin-bottom: 23px;
+        margin-bottom: 5.5%;
+        @include tab{
+            font-size: 3rem;
+            letter-spacing: 1.6px;
+            line-height: 1.9;
+            margin-bottom: 5px;
+        }
+        @include sp{
+            font-size: 2.4rem;
+        }
     }
 
     .c-about__p {
         font-size: 1.6rem;
         letter-spacing: 0.4px;
         color: $text-color;
-        margin-bottom: 25px;
-        line-height: 1.8;
-    }
-
-    .c-about__span {
-        display: block;
-        margin-top: -1px;
+        margin-bottom: 6.8%;
+        line-height: 1.75;
+        @include tab{
+            font-size:1.4rem;
+            letter-spacing: 0.4px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
     }
 
     .c-about__img {

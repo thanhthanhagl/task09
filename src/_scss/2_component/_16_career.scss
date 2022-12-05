@@ -6,7 +6,7 @@
     }
 
     .c-career__banner {
-        margin: 100px auto 0;
+        margin: 101px auto 0;
         width: 100%;
         position: relative;
     }
@@ -15,9 +15,9 @@
         max-width: 489px;
         width: 100%;
         background-color: $text-color;
-        padding: 38px 25px 31px 40px;
+        padding: 38px 25px 33px 40px;
         position: absolute;
-        top: 14.5%;
+        top: 14.2%;
         left: 10%;
     }
 
@@ -61,8 +61,8 @@
     .c-career__roadmapquote {
         max-width: 652px;
         width: 100%;
-        margin-top: 5.2%;
-        margin-left: 5.8%;
+        margin-top: 5.1%;
+        margin-left: 5.7%;
         padding: 27px 0 39px;
         position: relative;
 
@@ -87,7 +87,7 @@
     }
 
     .c-career__aboutleft {
-        width: 43.3%;
+        width: 43.6%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -114,7 +114,7 @@
 
     .c-career__aboutright {
         width: 57%;
-        padding: 7.8% 0 0 3.4%;
+        padding: 7.7% 0 0 3.3%;
         background-color: #fdfbef;
     }
 
@@ -125,7 +125,7 @@
     }
 
     .c-career__support {
-        margin-top: 53px;
+        margin-top: 54px;
     }
 
     .c-career__title {
@@ -133,8 +133,13 @@
         font-size: 3.4rem;
         font-weight: 500;
         line-height: 1.5;
-        letter-spacing: 2.6px;
+        letter-spacing: 2.4px;
         text-align: center;
+    }
+
+    .c-career__titleedit {
+        display: block;
+        transform: translate(3px, -2px);
     }
 
     .c-career__subtitle {
@@ -203,7 +208,7 @@
         letter-spacing: 0.4px;
         line-height: 1.7;
         padding: 12px 0 17px 86px;
-        margin: 15px 0 16px 52px;
+        margin: 15px 0 16px 51px;
     }
 
     .c-career__roadmapqnote {
@@ -227,11 +232,11 @@
         &::before {
             font-family: "Font Awesome 5 Free";
             content: "\f111";
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             font-weight: 900;
             color: $subtext-color;
             margin-right: 10px;
-            transform: translate(2.5px, -2px);
+            transform: translate(2px, -1.5px);
             display: inline-block;
         }
 
@@ -294,7 +299,7 @@
     }
 
     .c-career__supportinfo {
-        margin-top: 15px;
+        margin-top: 14px;
         margin-left: 2px;
         font-weight: 500;
         font-size: 1.8rem;
@@ -312,7 +317,7 @@
     }
 
     .c-career__supportfirst {
-        margin-top: 10px;
+        margin-top: 11px;
         margin-left: 23px;
         font-size: 1.6rem;
         font-weight: 300;
@@ -322,7 +327,7 @@
 
     .c-career__supportitem {
         line-height: 1.77;
-        margin-left: -2px;
+        margin-left: -3px;
 
         &::before {
             font-family: "Font Awesome 5 Free";

@@ -2,7 +2,7 @@
     margin: 105px auto 0;
 
     .c-interview__list {
-        margin: 53px auto 141px;
+        margin: 52px auto 141px;
         max-width: 960px;
         width: 100%;
         display: flex;
@@ -74,7 +74,7 @@
         width: 100%;
         margin: 0 auto;
         background-color: $main-color;
-        padding: 8.5% 10% 10%;
+        padding: 8.4% 10% 9.8%;
     }
 
     .c-interview__messwrap {
@@ -93,8 +93,13 @@
     }
 
     .c-interview__messimg {
-        flex-basis: 29%;
-        margin-top: -0.5%;
+        flex-basis: 29.1%;
+        margin-top: -0.6%;
+    }
+
+    .c-interview__dot {
+        margin-left: -1px;
+        margin-right: -2px;
     }
 
     .c-interview__unit {
@@ -105,13 +110,13 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
-        padding: 0 4%;
+        padding-left: 4.2%;
     }
 
     .c-interview__logo {
         max-width: 308px;
         width: 100%;
-        margin-right: 7.7%;
+        margin-right: 7.4%;
     }
 
     .c-interview__row {
@@ -122,7 +127,7 @@
     .c-interview__title {
         font-size: 4.4rem;
         font-weight: 500;
-        letter-spacing: 3.3px;
+        letter-spacing: 3.2px;
         color: $main-color;
         line-height: 1;
         text-align: center;
@@ -135,7 +140,7 @@
         color: $text-color;
         letter-spacing: 2.5px;
         line-height: 1;
-        margin-bottom: 54px;              
+        margin-bottom: 56px;              
     }
 
     .c-interview__quote {
@@ -161,7 +166,7 @@
         color: $subtext-color;
         font-size: 1.6rem;
         font-weight: 400;
-        letter-spacing: 0.4px;
+        letter-spacing: 0.3px;
         line-height: 1.7;
         text-align: center;
     }
@@ -243,24 +248,26 @@
         line-height: 1;
         color: $text-color;
         margin-top: 60px;
-        margin-bottom: 51px;                                                        
+        margin-bottom: 52px;                                                        
     }
 
     .c-interview__colleft {
         color: $text-color;
         font-size: 2.4rem;
         font-weight: 500;
-        letter-spacing: 0.6px;
+        letter-spacing: 0;
         line-height: 1;
-        width: 38px;    
+        width: 38px;
+        transform: translateY(-1px);  
     }
 
     .c-interview__colright {
         color: $text-color;
         font-size: 2.4rem;
         font-weight: 500;
-        letter-spacing: 0.6px;
+        letter-spacing: 0.4px;
         line-height: 1;
+        transform: translateY(1px);
 
         &::before {
             content: "";
@@ -268,7 +275,7 @@
             background-color: $text-color;
             width: 62px;
             height: 1px;
-            margin: 0 16px 0 18px;
+            margin: 0 18px 0 15px;
             transform: translateY(-7px);
         }
     }
