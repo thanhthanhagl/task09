@@ -28,6 +28,7 @@
 
         @include sp {
             width: 100%;
+            padding: 2% 0 9% 5.5%;
         }
     }
 
@@ -44,6 +45,7 @@
         @include sp {
             margin: 0 auto;
             width: 100%;
+            padding: 40px 0 0;
         }
     }
 
@@ -66,8 +68,18 @@
                 left: -17px;
             }
             @include sp {
-                z-index: -5;
+                z-index: -1;
+                top:9px;
+                left: 2px;
+                width: 95.5%;
+                height: 99%;
             }
+        }
+        @include sp{
+            max-width: 345px;
+            margin: 0 auto 31px;
+            padding-left: 11px;
+            z-index: 1;
         }
     }
 
@@ -85,6 +97,8 @@
         }
         @include sp {
             font-size: 2.4rem;
+            letter-spacing: 1.3px;
+            margin-bottom: 3px;
         }
     }
 
@@ -99,6 +113,10 @@
             letter-spacing: 0.4px;
             line-height: 1.8;
             margin-bottom: 24px;
+        }
+        @include sp{
+            line-height: 1.6;
+            margin-bottom: 21px;
         }
     }
 

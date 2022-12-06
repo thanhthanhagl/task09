@@ -8,9 +8,9 @@
   <main class="p-top">
     <section class="c-mainvisual">
       <div class="c-mainnvisual__imgs">
-        <picture class="c-mainvisual__img c-mainvisual__zoomin">
-          <source media="(max-width: 1023px)" srcset="../assets/img/entex_mainvisual1tablet.jpg">
+        <picture class="c-mainvisual__img c-mainvisual__zoomin">          
           <source media="(max-width: 767px)" srcset="../assets/img/entex_mainvisual1sp.jpg">
+          <source media="(max-width: 1023px)" srcset="../assets/img/entex_mainvisual1tablet.jpg">
           <img class="c-mainvisual__imgitem" src="../assets/img/entex_mainvisual1.jpg" alt="若い力を発揮できる環境がココにはある。">
         </picture>
         <picture class="c-mainvisual__img c-mainvisual__tobottom">
@@ -82,10 +82,26 @@
       </div>
       <div class="c-works__main">
         <div class="c-works__left">
-          <img class="c-works__img" src="./assets/img/works1.jpg" alt="重機の運転、土木作業の手元">
-          <img class="c-works__img" src="./assets/img/works2.jpg" alt="ブロック積み、フェンス、カーポート、門扉、照明、ポスト、表札と言われる金物商品の取付工事">
-          <img class="c-works__img" src="./assets/img/works3.jpg" alt="左官作業と言われるコンクリートを扱う工事作業">
-          <img class="c-works__img" src="./assets/img/works4.jpg" alt="電気工事（照明、インターホンの取付）">
+          <picture>
+            <source media="(max-width:767px)" srcset="./assets/img/works1sp.jpg">
+            <source media="(max-width:1023px)" srcset="./assets/img/works1tablet.jpg">
+            <img class="c-works__img" src="./assets/img/works1.jpg" alt="重機の運転、土木作業の手元">
+          </picture>
+          <picture>
+            <source media="(max-width:767px)" srcset="./assets/img/works2sp.jpg">
+            <source media="(max-width:1023px)" srcset="./assets/img/works2tablet.jpg">
+            <img class="c-works__img" src="./assets/img/works2.jpg" alt="ブロック積み、フェンス、カーポート、門扉、照明、ポスト、表札と言われる金物商品の取付工事">
+          </picture>
+          <picture>
+            <source media="(max-width:767px)" srcset="./assets/img/works3sp.jpg">
+            <source media="(max-width:1023px)" srcset="./assets/img/works3tablet.jpg">
+            <img class="c-works__img" src="./assets/img/works3.jpg" alt="左官作業と言われるコンクリートを扱う工事作業">
+          </picture>
+          <picture>
+            <source media="(max-width:767px)" srcset="./assets/img/works4sp.jpg">
+            <source media="(max-width:1023px)" srcset="./assets/img/works4tablet.jpg">
+            <img class="c-works__img" src="./assets/img/works4.jpg" alt="電気工事（照明、インターホンの取付）">
+          </picture>
         </div>
         <div class="c-works__right">
           <div class="c-works__righttop">
@@ -121,7 +137,7 @@
             <% if (typeof media !='undefined' ) { %>
               <% media.main && media.main.forEach(photo=> { %>
                 <div class="c-works__photo">
-                  <img src="<%= photo.url %>" alt="<%= photo.alt%>">
+                  <img class="c-works__photoitem" src="<%= photo.url %>" alt="<%= photo.alt%>">
                   <p class="c-works__pickup">pick up</p>
                 </div>
                 <% }) %>
@@ -138,7 +154,7 @@
           <span class="c-career__titleedit">あなたのキャリアプランもしっかり考えています。</span></h2>
         <p class="c-career__desc">
           世間では、終身雇用が保証されにくい世の中になってきました。<br>
-          その中で、「長く勤めることができる会社」「手に職をつけられる業種」は、キャリア形成にも影響します。<br>
+          その中で、「長く勤めることができる会社」「手に職をつけられる業種」は、<span class="c-tab"><br></span>キャリア形成にも影響します。<br>
           人が生きている以上、家や建物を建てることは無くなりません。<br>
           また、古くなった建物を部分的に改修することは増えていきます。<br>
           その時にあなたがエクステリア業界のプロになっていれば、たくさんの生きる道を作ることができます。<br>
@@ -146,10 +162,10 @@
         </p>
       </div>
       <div class="c-career__banner">
-        <picture class="c-career__bannerimg">
+        <picture>
           <source media="(max-width: 767px)" srcset="./assets/img/careersp.jpg">
           <source media="(max-width: 1023px)" srcset="./assets/img/careertablet.jpg">
-          <img src="./assets/img/career.jpg" alt="人材育成に最大限の力を注ぎます！">
+          <img class="c-career__bannerimg" src="./assets/img/career.jpg" alt="人材育成に最大限の力を注ぎます！">
         </picture>
         <div class="c-career__inner">
           <h3 class="c-career__subtitle">人材育成に最大限の力を注ぎます！</h3>
@@ -237,7 +253,7 @@
             <li class="c-career__welfareitem">賞与あり（夏・冬 年2回）</li>
           </ul>
           <div class="c-career__support">
-            <h3 class="c-career__supporttitle">独立支援制度も充実!20代でも独立可能</h3>
+            <h3 class="c-career__supporttitle">独立支援制度も充実!<span class="c-tab"><br></span>20代でも独立可能</h3>
             <ul class="c-career__supportinfo">独立支援制度
               <li class="c-career__supportfirst">資格取得費用の援助
                 <ul>
@@ -265,16 +281,19 @@
         <% if (typeof interview !='undefined' ) { %>
           <% interview.main && interview.main.forEach (person=>{ %>
             <div class="c-interview__item" data-open="<%= person.id %>">
-              <div class="c-interview__ava">
-                <picture>
-                  <source media="(max-width:1023px" srcset="<%= person.avasp %>">
-                  <img class="c-interview__avatar" src="<%= person.ava %>" alt="<%= person.name %>">
-                </picture>
-                <p class="c-interview__interview">interview</p>
+              <div class="c-interview__itemtop">
+                <div class="c-interview__ava">
+                  <picture>
+                    <source media="(max-width:767px" srcset="<%= person.avasp %>">
+                    <source media="(max-width:1023px" srcset="<%= person.avatablet %>">
+                    <img class="c-interview__avatar" src="<%= person.ava %>" alt="<%= person.name %>">
+                  </picture>
+                  <p class="c-interview__interview">interview</p>
+                </div>
+                <p class="c-interview__intro">
+                  <%= person.intro %>
+                </p>
               </div>
-              <p class="c-interview__intro">
-                <%= person.intro %>
-              </p>
               <div class="c-interview__info">
                 <div class="c-interview__text">
                   <p class="c-interview__name">
@@ -314,8 +333,7 @@
             </div>
           </div>
           <h3 class="c-interview__mess">自分の作品として最低でも50年は施工場所が残る仕事です。<br>
-            大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br>
-            とても嬉しくて遣り甲斐のある仕事です。<br>
+            大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、とても嬉しくて遣り甲斐のある仕事です。<br>
           </h3>
           <p class="c-interview__signal">
             <span class="c-interview__unit">株式会社ENTEX</span>

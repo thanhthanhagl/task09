@@ -20,10 +20,20 @@ body {
 .l-container {
     margin: 0 auto;
 }
+
 //-------------------------------------------------------\
 .c-sp {
     display: none;
+
     @include sp {
         display: block;
+    }
+}
+
+.c-tab {
+    display: none;
+
+    @include tab {
+        display: contents;
     }
 }

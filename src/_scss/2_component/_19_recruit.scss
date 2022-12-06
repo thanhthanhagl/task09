@@ -5,11 +5,15 @@
         margin: 8.3% auto;
         @include tab {
             padding: 0 20px;
+            margin: 7.8% auto 0;
         }
     }
 
     .c-recruit__tabs {
-        margin-top: 55px;        
+        margin-top: 55px;
+        @include tab {
+            margin-top: 30px;
+        }    
     }
 
     .c-recruit__tabtop {
@@ -25,7 +29,7 @@
         padding: 39px 37px 57px;
         background: #f2f5f7;
         @include tab {
-            padding: 35px 20px 43px;
+            padding: 15px 21px 41px 18px;
         }
     }
 
@@ -42,6 +46,9 @@
             padding-top: 41px;
             color: $text-color;
             pointer-events: none;
+            @include tab {
+                padding-top: 32px;
+            }
         }
     }
 
@@ -58,6 +65,9 @@
             padding-top: 41px;
             color: $text-color;
             pointer-events: none;
+            @include tab {
+                padding-top: 32px;
+            }
         }
     }
 
@@ -94,41 +104,32 @@
         display: flex;
         margin: 0 auto;
         border-bottom: 1px solid #707070;
-        padding: 17px 0 8px;
+        padding: 18px 0 9px;
+        @include tab {
+            padding: 20px 0;
 
-        &:first-child,
-        &:nth-child(12),
-        &:nth-child(13) {
-            padding-bottom: 10px;
+            &:nth-child(2) {
+                transform: translateY(-3px);
+            }
         }
 
-        &:nth-child(3),
-        &:nth-child(5),
-        &:nth-child(8),
-        &:nth-child(9),
-        &:nth-child(10),
-        &:nth-child(11) {
-            padding-bottom: 13px;
-        }
-
-        &:nth-child(6) {
-            padding-bottom: 4px;
-        }
-
-        &:nth-child(7) {
-            padding-bottom: 6px;
+        &:first-child {
+            padding-bottom: 11px;
+            @include tab {
+                padding: 17px 0 15px;
+            }
         }
     }
 
     .c-recruit__btns {
         display: flex;
         justify-content: space-between;
-        margin: 51px auto 0;
+        margin: 56px auto 0;
         max-width: 741px;
         width: 100%;
         @include tab {
-            margin: 41px auto 0;
-            padding: 0 23px;
+            margin: 43px auto 0;
+            max-width: 620px;
         }
     }
 
@@ -137,6 +138,11 @@
         height: 30px;
         transform: translateY(-4px);
         margin-left: 3px;
+        @include tab {
+            width: 27px;
+            height: 27px;
+            margin-left: -2px;
+        }
     }
 
     .c-recruit__btn {
@@ -154,6 +160,7 @@
             max-width: 300px;
             font-size: 2rem;
             letter-spacing: 0.5px;
+            padding: 17px 0 10px;
         }
 
         &:first-child {
@@ -195,14 +202,23 @@
         line-height: 1;
         position: relative;
         top: 0;
-        padding: 32px 0 29px;
+        padding: 32px 0 26px;
         overflow: hidden;
+        @include tab {
+            padding: 25px 0 5px;
+        }
 
         &.active {
             width: calc(50% + 77px);
+            @include tab {
+                width: calc(50% + 62px);
+            }
 
             & >.c-recruit__spantext {
                 transform: translate(0, 0);
+                @include tab {
+                    transform: translate(0, -10px);
+                }
             }
         }
     }
@@ -210,6 +226,9 @@
     .c-recruit__spantext {
         display: block;
         transform: translate(-17px, 5px);
+        @include tab {
+            transform: translate(-14px, -7px);
+        }
     }
 
     .c-recruit__colleft {
@@ -223,6 +242,8 @@
             font-size: 1.6rem;
             letter-spacing: 0.4px;
             line-height: 1.875;
+            padding: 0 22px;
+            width: 30%;
         }
     }
 
@@ -237,7 +258,8 @@
         @include tab {
             font-size: 1.4rem;
             letter-spacing: 0.4px;
-            line-height: 1.875;
+            line-height: 2;
+            transform: translate(-1px, 1px);
         }
     }
 }

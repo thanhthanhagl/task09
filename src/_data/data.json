@@ -112,6 +112,7 @@
       {
         "id": 1,
         "ava": "./assets/img/p1.jpg",
+        "avatablet":"./assets/img/p1tablet.jpg",
         "avasp":"./assets/img/p1sp.jpg",
         "avapp":"./assets/img/p1pp.jpg",
         "intro": "いつも明るく元気に作業。朝も一番に出勤してます！",
@@ -140,6 +141,7 @@
       {
         "id":2,
         "ava": "./assets/img/p2.jpg",
+        "avatablet":"./assets/img/p2tablet.jpg",
         "avasp":"./assets/img/p2sp.jpg",
         "avapp":"./assets/img/p2pp.jpg",
         "intro": "職長として土木・外構工事の現場管理をしながら作業指示",
@@ -168,6 +170,7 @@
       {
         "id":3,
         "ava": "./assets/img/p3.jpg",
+        "avatablet":"./assets/img/p3tablet.jpg",
         "avasp":"./assets/img/p3sp.jpg",
         "avapp":"./assets/img/p3pp.jpg",
         "intro": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",

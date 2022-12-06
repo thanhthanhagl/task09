@@ -46,9 +46,8 @@
 
         @include sp {
             font-size: 1rem;
-            letter-spacing: 0.2px;
             left: 31px;
-            top: 29px;
+            top: 26px;
         }
     }
 
@@ -115,11 +114,11 @@
         @include sp {
             position: relative;
             border-radius: 10px;
-            padding: 10px 0;
+            padding: 8px 0;
             line-height: 1;
             width: 122px;
             height: 38px;
-            right: -4.6%;
+            right: -7.9%;
         }
     }
 
@@ -131,7 +130,7 @@
         }
 
         @include sp {
-            transform: translate(0, 0);
+            transform: translate(-2px, 1px);
         }
     }
 
@@ -150,18 +149,37 @@
         @include sp {
             font-size: 1.4rem;
             letter-spacing: 1.7px;
-            line-height: 1.5;
+            line-height: 1.6;
+            display: inline-block;
+            transform: translateX(2px);
         }
     }
 
     .c-header__iconmenu {
-        position: relative;
-        right: 0;
-        width: 30px;
-        height: 20px;
-        top: 9px;
-        margin-left: 20px;
-        display: block;
+        display: none;
+
+        @include sp {
+            position: relative;
+            right: 3px;
+            width: 30px;
+            height: 20px;
+            top: 9px;
+            margin-left: 20px;
+            display: block;
+            &.is-open{
+                .c-header__line{
+                    &:first-child{
+                        transform: translate(2px, 9px) rotate(-45deg);
+                    }
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+                    &:last-child{
+                        transform: translate(2px, -8px) rotate(-135deg);
+                    }
+                }
+            }
+        }
     }
 
     .c-header__line {
@@ -170,10 +188,9 @@
         right: 0;
         height: 3px;
         background-color: #0080cc;
-        transition: 0.4s ease-in-out;
 
         &:first-child {
-            top: 0;
+            top: 0;            
         }
 
         &:nth-child(2) {
@@ -206,12 +223,13 @@
 
         &.is-open {
             display: block;
+            overflow: hidden;
         }
     }
 
     .c-header__navmb {
         width: 100%;
-        padding: 27px 20px 23px 53px;
+        padding: 22px 20px 18px 53px;
         position: relative;
 
         &::before {
@@ -231,15 +249,16 @@
         letter-spacing: 1px;
         line-height: 1.5;
         font-weight: 500;
-        color: $main-color;        
+        color: $main-color;
     }
 
     .c-header__btninner {
         width: 100%;
-        max-width: calc(100% - 40px);
-        margin: 36px auto;
+        max-width: calc(100% - 43px);
+        margin: 35px auto;
         height: 60px;
-        padding: 20px 0;
+        padding: 16px 0;
+        right: 2px;
     }
 
     .c-header__imgrecruitinner {
@@ -256,6 +275,8 @@
         letter-spacing: 1.3px;
         line-height: 1;
         color: $text-color;
+        display: inline-block;
+        transform: translate(9px,1px);
     }
 
 }

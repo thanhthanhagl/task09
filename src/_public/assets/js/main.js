@@ -85,10 +85,12 @@ $(document).ready(function () {
   //menu mobile
   $(".c-header__iconmenu").click(function () {
     $(".c-header__gnavmb").toggleClass("is-open");
+    $(this).toggleClass("is-open");
     $('body').toggleClass("is-fixed");
 });
 $(".c-header__navmb").click(function () {
   $(".c-header__gnavmb").toggleClass("is-open");   
+  $(".c-header__iconmenu").toggleClass("is-open");
   $('body').toggleClass("is-fixed");  
  });
   //----------- nav scroll ------------------
