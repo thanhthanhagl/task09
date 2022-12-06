@@ -53,6 +53,9 @@
             width: 87%;
             margin-top: 0;
         }
+        @include sp{
+            width: 97%;
+        }
     }
 
     .c-career__roadmapmain {
@@ -132,6 +135,9 @@
     .c-career__about {
         width: 100%;
         display: flex;
+        @include sp{
+            flex-direction: column;
+        }
     }
 
     .c-career__aboutleft {
@@ -144,28 +150,23 @@
         @include tab {
             width: 40%;
         }
+        @include sp{
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     .c-career__img {
-        @include tab {
-            height: unset !important;
-        }
-
-        &:nth-child(1) {
+        max-height: 309px;
+        height: 100%;
+        &:first-child{
             height: 237px;
-        }
-
-        &:nth-child(2) {
-            height: 309px;
-        }
-
-        &:nth-child(3) {
-            height: 281px;
-        }
-
-        &:nth-child(4) {
-            height: 280px;
-        }
+        } 
+        @include sp{
+            width: 50%;
+            height: 120px;
+        }  
     }
 
     .c-career__aboutright {
@@ -175,6 +176,9 @@
 
         @include tab {
             padding: 7% 0 0 2.7%;
+        }
+        @include sp{
+            width: 100%;
         }
     }
 

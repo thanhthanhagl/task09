@@ -112,6 +112,9 @@
                 transform: translateY(-3px);
             }
         }
+        @include sp{
+            flex-direction: column;
+        }
 
         &:first-child {
             padding-bottom: 11px;
@@ -130,6 +133,10 @@
         @include tab {
             margin: 43px auto 0;
             max-width: 620px;
+        }
+        @include sp{
+            flex-direction: column;
+            padding: 0 27px;
         }
     }
 
@@ -161,6 +168,10 @@
             font-size: 2rem;
             letter-spacing: 0.5px;
             padding: 17px 0 10px;
+        }
+        @include sp{
+            max-width: 100%;
+            margin-bottom: 20px;
         }
 
         &:first-child {
@@ -245,6 +256,10 @@
             padding: 0 22px;
             width: 30%;
         }
+        @include sp{
+            width: 100%;
+            padding: 0 20px;
+        }
     }
 
     .c-recruit__colright {
@@ -260,6 +275,10 @@
             letter-spacing: 0.4px;
             line-height: 2;
             transform: translate(-1px, 1px);
+        }
+        @include sp{
+            width: 100%;
+            padding: 0 20px;
         }
     }
 }

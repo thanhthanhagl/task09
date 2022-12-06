@@ -166,15 +166,18 @@
             top: 9px;
             margin-left: 20px;
             display: block;
-            &.is-open{
-                .c-header__line{
-                    &:first-child{
+
+            &.is-open {
+                .c-header__line {
+                    &:first-child {
                         transform: translate(2px, 9px) rotate(-45deg);
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         opacity: 0;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         transform: translate(2px, -8px) rotate(-135deg);
                     }
                 }
@@ -276,7 +279,7 @@
         line-height: 1;
         color: $text-color;
         display: inline-block;
-        transform: translate(9px,1px);
+        transform: translate(9px, 1px);
     }
 
 }

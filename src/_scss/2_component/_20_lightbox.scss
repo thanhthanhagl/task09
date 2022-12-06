@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 111;
     padding: 30px 10px;
     opacity: 0;
     transform: scale(0, 0);
@@ -36,6 +36,9 @@
         z-index: 10;
         max-height: 100vh;
         overflow-y: auto;
+        @include sp{
+            width: 90%;
+        }
     }
 
     .c-lightbox__main {
@@ -43,11 +46,20 @@
         border: 4px #0080cc solid;
         text-align: center;
         padding: 40px;
+        @include sp{
+            padding: 36px 20px 18px;
+            border: 2px #0080cc solid;
+        }
     }
 
     .c-lightbox__img {
-        width: 840px;
-        height: 600px;
+        max-width: 840px;
+        max-height: 600px;
+        width: 100%;
+        height: auto;
+        @include sp{
+            margin: 0 auto 18px;
+        }
     }
 
     .c-lightbox__close {
@@ -63,6 +75,9 @@
         line-height: 1.2;
         padding: 11px 0 9px 18px;
         position: relative;
+        @include sp{
+            margin: 0 auto;
+        }
 
         &::before {
             content: "";

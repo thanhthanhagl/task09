@@ -46,6 +46,11 @@
             width: 30.5%;
             padding: 18px 19px 15px;
         }
+        @include sp{
+            width: 100%;
+            display: inline-block;
+            max-width: 100%;
+        }
     }
 
     .c-company__td {
@@ -65,6 +70,10 @@
             letter-spacing: 0.3px;
             line-height: 1.5;
             padding: 11px 29px;
+        }
+        @include sp{
+            width: 100%;
+            display: inline-block;
         }
     }
 
