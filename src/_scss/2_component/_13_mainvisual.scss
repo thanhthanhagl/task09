@@ -152,23 +152,26 @@
         width: 100%;
         height: calc(100vh - 115px);
         min-height: 500px;
+        object-fit: cover;
+        object-position: center;
         @include tab {
             height: calc(100vh - 95px);
         }
         @include sp {
-            height: calc(100vh - 216px);
+            // height: calc(100vh - 216px);
+            height: 100vh;
         }
     }
 
     .slick-active.c-mainvisual__zoomin {
-        // animation: zoomin 10s infinite linear;
+        animation: zoomin 10s infinite linear;
     }
 
     .slick-active.c-mainvisual__tobottom {
-        // animation: tobottom 10s infinite linear;
+         animation: tobottom 10s infinite linear;
     }
 
     .slick-active.c-mainvisual__toright {
-        // animation: toright 10s infinite linear;
+        animation: toright 10s infinite linear;
     }
 }

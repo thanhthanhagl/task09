@@ -9,12 +9,13 @@
 
     @include tab {
         padding: 20px 20px 0;
+        background: rgb(255, 255, 255);
+        position: fixed;
+        z-index: 99;
     }
 
     @include sp {
         padding: 14px 10px;
-        position: fixed;
-        z-index: 99;
     }
 
     .c-header__gnav {
@@ -86,9 +87,25 @@
                 content: "";
                 background-color: $main-color;
                 height: 2px;
-                margin-top: 10px;
+                margin-top: -16px;
                 transition-duration: 0.3s;
                 display: block;
+            }
+        }
+
+        &.is-active {
+            &::after {
+                content: "";
+                background-color: $main-color;
+                height: 2px;
+                margin-top: -16px;
+                transition: 0.3s;
+                display: block;
+                z-index: 99;
+
+                @include tab {
+                    margin-top: -10px;
+                }
             }
         }
     }
@@ -99,6 +116,7 @@
             right: 2.6%;
             margin-top: 0;
         }
+
         @include sp {
             display: flex;
         }
@@ -112,11 +130,12 @@
         padding: 10px 0;
         text-align: center;
         margin-top: 2px;
+
         @include tab {
             width: 157px;
             height: 40px;
             padding: 5px 0;
-            margin-top:0;
+            margin-top: 0;
         }
 
         @include sp {
@@ -202,7 +221,7 @@
         background-color: #0080cc;
 
         &:first-child {
-            top: 0;            
+            top: 0;
         }
 
         &:nth-child(2) {
@@ -295,13 +314,3 @@
 
 /* Main menu
 ------------------------------------------------------------*/
-.is-active {
-    &::after {
-        content: "";
-        background-color: $main-color;
-        height: 2px;
-        margin-top: 10px;
-        transition: 0.3s;
-        display: block;
-    }
-}

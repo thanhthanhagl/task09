@@ -63,7 +63,8 @@
                 padding-top: 32px;
             }
             @include sp {
-                padding-top: 23px;
+                padding-top: 23px;                
+                margin-right: -10px;
             }
         }
     }
@@ -89,6 +90,7 @@
             }
             @include sp {
                 padding-top: 23px;
+                margin-left:-10px;
             }
         }
     }
@@ -170,6 +172,7 @@
             flex-direction: column;
             padding: 0 17px;
             margin: 39px auto 0;
+            max-width: 302px;
         }
     }
 
@@ -285,8 +288,8 @@
             @include tab {
                 width: calc(50% + 62px);
             }
-            @include tab {
-                width: calc(50% + 31px);
+            @include sp {
+                width: calc(50% + 21px);
             }
 
             & >.c-recruit__spantext {

@@ -12,7 +12,7 @@
     &.is-open {
         opacity: 1;
         transform: scale(1, 1);
-        transition: all 0.5s ease-in-out;      
+        transition: all 0.5s ease-in-out;
     }
 
     .c-popup__overlay {
@@ -28,8 +28,6 @@
     .c-popup__inner {
         max-width: 960px;
         width: 100%;
-        height: 730px;
-        overflow: hidden;
         display: block;
         margin: 0 auto;
         position: absolute;
@@ -37,8 +35,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9999;
-        max-height: 100vh;
-        overflow-y: scroll;
+
         @include sp {
             width: 90%;
         }
@@ -49,7 +46,24 @@
         border: 4px #0080cc solid;
         text-align: center;
         padding: 48px 55px 22px 57px;
+        max-height: 100vh;
+        height: 630px;
         display: none;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-thumb {
+            background: $main-color;
+            border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $text-color;
+        }
+
         @include sp {
             padding: 40px 20px;
         }
@@ -59,6 +73,7 @@
         display: flex;
         justify-content: center;
         margin: 37px auto 0;
+
         @include sp {
             flex-direction: column;
         }
@@ -71,6 +86,7 @@
         font-weight: 600;
         letter-spacing: 1.8px;
         line-height: 1;
+
         @include sp {
             font-size: 2rem;
             line-height: 1.5;
@@ -82,8 +98,9 @@
         max-width: 290px;
         width: 100%;
         margin-right: 40px;
+
         @include sp {
-            margin-bottom: 40px;
+            margin: 0 auto 40px;
         }
     }
 
@@ -92,6 +109,7 @@
         height: 405px;
         object-fit: cover;
         object-position: top;
+
         @include sp {
             height: 316px;
         }
@@ -109,7 +127,7 @@
         text-align: center;
         background-color: $main-color;
         padding: 9px 0 13px;
-        color: $text-color;     
+        color: $text-color;
     }
 
     .c-popup__name {
@@ -131,6 +149,7 @@
         color: $subtext-color;
         line-height: 1.8;
         margin-bottom: 4px;
+
         @include sp {
             font-size: 1.6rem;
             letter-spacing: 0.2px;
@@ -145,6 +164,7 @@
         color: $td-color;
         line-height: 1.85;
         margin-bottom: 25px;
+
         @include sp {
             font-size: 1.4rem;
             letter-spacing: 0.3px;
