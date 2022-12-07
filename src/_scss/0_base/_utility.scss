@@ -6,16 +6,44 @@
 //	margin-top: -100px;
 //	padding-top: 100px;
 //}
+.u-pccontent {
+    @include sp {
+        display: none;
+    }
+}
 
+.u-spcontent {
+    display: none;
+
+    @include sp {
+        display: block;
+    }
+}
 //------------------------------------------------------------
 // margin
 //------------------------------------------------------------
 .u-comma {
     margin-right: -2px;
+    @include sp {
+        margin-right: 0;
+    }
 }
 
 .u-space {
     margin-left: 5px;
+}
+
+.u-career {
+    @include sp {
+        margin-left: -12px;
+    }
+}
+
+.u-textedit {
+    @include sp {
+        display: inline;
+        margin-left: 3px;
+    }
 }
 
 //------------------------------------------------------------

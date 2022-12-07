@@ -93,6 +93,11 @@ $(".c-header__navmb").click(function () {
   $(".c-header__iconmenu").toggleClass("is-open");
   $('body').toggleClass("is-fixed");  
  });
+ $(".c-header__btninner").click(function () {
+  $(".c-header__gnavmb").toggleClass("is-open");   
+  $(".c-header__iconmenu").toggleClass("is-open");
+  $('body').toggleClass("is-fixed");  
+ });
   //----------- nav scroll ------------------
   $(window).scroll(function () {
     var scrollDistance = $(window).scrollTop();

@@ -93,6 +93,17 @@
         }
     }
 
+    .c-header__right {
+        @include tab {
+            position: absolute;
+            right: 2.6%;
+            margin-top: 0;
+        }
+        @include sp {
+            display: flex;
+        }
+    }
+
     .c-header__btnrecruit {
         border-radius: 9px;
         background-color: $main-color;
@@ -101,14 +112,11 @@
         padding: 10px 0;
         text-align: center;
         margin-top: 2px;
-
         @include tab {
-            position: absolute;
-            right: 2.6%;
-            margin-top: 0;
             width: 157px;
             height: 40px;
             padding: 5px 0;
+            margin-top:0;
         }
 
         @include sp {
@@ -118,7 +126,8 @@
             line-height: 1;
             width: 122px;
             height: 38px;
-            right: -7.9%;
+            top: -2px;
+            right: 3px;
         }
     }
 

@@ -16,6 +16,9 @@ footer
         @include tab {
             padding: 0 20px;
         }
+        @include sp{
+            padding: 0 10px;
+        }
     }
 
     .c-footer__top {
@@ -28,11 +31,18 @@ footer
             padding: 31px 0 35px;
             position: relative;
         }
+        @include sp{
+            padding: 9px 0;
+        }
     }
 
     .c-footer__logo {
         position: relative;
         max-width: 164px;
+        @include sp{
+            max-width: 100px;
+            border-radius: 20px;
+        }
     }
 
     .c-footer__list {
@@ -84,6 +94,9 @@ footer
             top: 31px;
             right: 2px;
         }
+        @include sp{
+            display: none;
+        }
     }
 
     .c-footer__imgrecruit {
@@ -110,6 +123,11 @@ footer
             padding-right: 0;
             margin: 11px 0 13px;
         }
+        @include sp{
+            margin: 17px 0 18px;
+            font-size: 1.2rem;
+            letter-spacing: 0.2px;
+        }
     }
 
     .c-footer__copyright {
@@ -125,5 +143,18 @@ footer
             font-size: 1.2rem;
             padding: 9px 0 6px;
         }
+        @include sp{
+            font-size: 1rem;
+            letter-spacing: 0.1px;
+            padding: 11px 0;
+        }
+    }
+    .c-footer__slogan{
+        font-size: 0.8rem;
+        letter-spacing: 0;
+        line-height: 1;
+        position: relative;
+        top:-1px;
+        left: 25px;
     }
 }

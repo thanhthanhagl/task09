@@ -144,7 +144,7 @@
         "avatablet":"./assets/img/p2tablet.jpg",
         "avasp":"./assets/img/p2sp.jpg",
         "avapp":"./assets/img/p2pp.jpg",
-        "intro": "職長として土木・外構工事の現場管理をしながら作業指示",
+        "intro": "職長として<br class='u-spcontent'>土木・外構工事の現場管理をしながら作業指示",
         "name": "福元　和稔 (45)",
         "position": "入社3年目・土木、外構担当職長  ",
         "qna":{
@@ -173,7 +173,7 @@
         "avatablet":"./assets/img/p3tablet.jpg",
         "avasp":"./assets/img/p3sp.jpg",
         "avapp":"./assets/img/p3pp.jpg",
-        "intro": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
+        "intro": "高校卒業後に入社し、関西で妻と出会い結婚。<br class='u-spcontent'>外構部長へ",
         "name": "工藤　智成(41)",
         "position": "入社23年目・外構部長",
         "qna":{

@@ -30,6 +30,12 @@ body {
     }
 }
 
+.c-pc {
+    @include sp {
+        display: none;
+    }
+}
+
 .c-tab {
     display: none;
 
