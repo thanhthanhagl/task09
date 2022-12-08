@@ -1,0 +1,21 @@
+.c-backtotop {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: $main-color;
+    z-index: 1000;
+    cursor: pointer;
+
+    &::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0d8";
+        color: $text-color;
+        font-size: 3rem;
+        font-weight: 900;
+        padding: 5px 15px;
+    }
+
+    &.is-hidetop {
+        display: none;
+    }
+}

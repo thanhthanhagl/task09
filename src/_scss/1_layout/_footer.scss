@@ -22,7 +22,7 @@ footer
     }
 
     .c-footer__top {
-        padding: 26px 20px 20px;
+        padding: 25px 20px 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -68,17 +68,6 @@ footer
         color: $main-color;
         letter-spacing: 0.3px;
         line-height: 2.5;
-
-        &:hover {
-            &::after {
-                content: "";
-                background-color: $main-color;
-                height: 2px;
-                margin-top: 10px;
-                transition-duration: 0.3s;
-                display: block;
-            }
-        }
     }
 
     .c-footer__btnrecruit {
@@ -92,7 +81,7 @@ footer
         @include tab {
             position: absolute;
             top: 31px;
-            right: 2px;
+            right: 1px;
         }
         @include sp {
             display: none;
@@ -101,6 +90,9 @@ footer
 
     .c-footer__imgrecruit {
         transform: translate(-5px, 4px);
+        @include tab {
+            transform: translate(-5px, 5px);
+        }
     }
 
     .c-footer__txtrecruit {
@@ -108,6 +100,9 @@ footer
         letter-spacing: 2px;
         font-size: 1.8rem;
         line-height: 1.7;
+        @include tab {
+            letter-spacing: 2.1px;
+        }
     }
 
     .c-footer__intro {
@@ -121,7 +116,8 @@ footer
         margin: 10px 0 15px;
         @include tab {
             padding-right: 0;
-            margin: 11px 0 13px;
+            margin: 12px 0;
+            letter-spacing: 0.2px;
         }
         @include sp {
             margin: 17px 0 18px;
@@ -146,7 +142,7 @@ footer
         @include sp {
             font-size: 1rem;
             letter-spacing: 0.1px;
-            padding: 11px 0;
+            padding: 11px 0 9px;
         }
     }
 

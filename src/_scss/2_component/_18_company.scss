@@ -3,7 +3,7 @@
     max-width: 960px;
     width: 100%;
     @include tab {
-        margin: 60px auto;
+        margin: 60px auto 59px;
         padding: 0 20px;
     }
     @include sp {
@@ -33,7 +33,7 @@
             margin-top: 33px;
         }
         @include sp {
-            margin-top: 35px;
+            margin-top: 36px;
         }
     }
 
@@ -50,7 +50,6 @@
         max-width: 287px;
         width: 29.9%;
         text-align: left;
-        vertical-align: top;
         @include tab {
             font-size: 1.4rem;
             letter-spacing: 0.3px;
@@ -77,8 +76,6 @@
         font-weight: 400;
         letter-spacing: 0.4px;
         line-height: 1.875;
-        vertical-align: middle;
-        font-feature-settings: "palt" 1;
         @include tab {
             font-size: 1.4rem;
             letter-spacing: 0.3px;
@@ -87,50 +84,9 @@
         }
         @include sp {
             width: 100%;
+            max-width: 100%;
             display: inline-block;
             padding: 8px;
-        }
-    }
-
-    .c-company__tr {
-        &:nth-child(9) {
-            .c-company__td {
-                padding: 14px 20px 17px;
-            }
-
-            .c-company__th {
-                padding: 14px 19px 17px;
-            }
-        }
-
-        &:nth-child(15) {
-            .c-company__td {
-                padding: 13px 20px 7px;
-            }
-
-            .c-company__th {
-                padding: 13px 19px 7px;
-            }
-        }
-
-        &:nth-child(16) {
-            .c-company__td {
-                padding: 13px 20px;
-            }
-
-            .c-company__th {
-                padding: 13px 19px;
-            }
-        }
-
-        &:nth-child(n + 17) {
-            .c-company__td {
-                padding: 14px 20px 10px;
-            }
-
-            .c-company__th {
-                padding: 14px 19px 10px;
-            }
         }
     }
 }

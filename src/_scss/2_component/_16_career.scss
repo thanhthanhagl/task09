@@ -135,15 +135,15 @@
     .c-career__roadmapquote {
         max-width: 652px;
         width: 100%;
-        margin-top: 5.1%;
+        margin-top: 5%;
         margin-left: 5.7%;
         padding: 27px 0 39px;
         position: relative;
 
         @include tab {
-            margin-top: -4.4%;
-            margin-left: 7.1%;
-            padding: 24px 0 36px;
+            margin-top: 42px;
+            margin-left: 39px;
+            padding: 23px 0 37px;
         }
         @include sp {
             margin-top: 24px;
@@ -197,7 +197,7 @@
         padding-left: 10px;
 
         @include tab {
-            width: 39%;
+            width: 40.1%;
         }
         @include sp {
             width: 100%;
@@ -222,7 +222,6 @@
 
     .c-career__img {
         width: 100%;
-        object-fit: cover;
         @include sp {
             height: 100%;
         }
@@ -248,13 +247,16 @@
         max-width: 560px;
         width: 100%;
         margin-top: 7px;
+        @include tab {
+            margin-top: 6px;
+        }
         @include sp {
             margin-top: 10px;
         }
     }
 
     .c-career__support {
-        margin-top: 54px;
+        margin-top: 52px;
 
         @include tab {
             margin-top: 47px;
@@ -268,7 +270,7 @@
         color: $main-color;
         font-size: 3.4rem;
         font-weight: 500;
-        line-height: 1.5;
+        line-height: 1.4;
         letter-spacing: 2.4px;
         text-align: center;
 
@@ -285,12 +287,10 @@
             width: 97%;
         }
     }
-
-    .c-career__titleedit {
-        display: block;
-        transform: translate(3px, -2px);
-        @include sp {
-            transform: translate(1px, -1px);
+    .c-career__titleedit{
+        margin-left: 8px;
+        @include tab{
+            margin-left: 0;
         }
     }
 
@@ -379,7 +379,7 @@
         font-weight: 400;
         letter-spacing: 0.4px;
         line-height: 1.75;
-        margin-top: 17px;
+        margin-top: 24px;
 
         @include tab {
             font-size: 1.4rem;
@@ -422,7 +422,6 @@
         line-height: 1.7;
         padding: 12px 0 17px 86px;
         margin: 15px 0 16px 51px;
-        font-feature-settings: "palt" 1;
 
         @include tab {
             padding: 16px 0 26px 40px;
@@ -441,7 +440,7 @@
         color: $sub-color;
         font-size: 2.5rem;
         font-weight: 600;
-        letter-spacing: 0.6px;
+        letter-spacing: 0.7px;
         line-height: 1.5;
         text-align: center;
         display: block;
@@ -494,6 +493,9 @@
             margin-right: 10px;
             transform: translate(2px, -1.5px);
             display: inline-block;
+            @include tab {
+                margin-right: 9px;
+            }
             @include sp {
                 margin-right: 7px;
                 transform: translate(1px, -1.5px);
@@ -512,7 +514,7 @@
 
             .c-career__welfarenote {
                 margin-top: 4px;
-                margin-left: 26px;
+                margin-left: 25px;
 
                 @include tab {
                     margin-top: 8px;
@@ -531,7 +533,7 @@
             transform: translateY(2px);
 
             @include tab {
-                transform: translateY(1px);
+                transform: translateY(2px);
             }
             @include sp {
                 transform: translateY(4px);
@@ -551,6 +553,9 @@
         }
 
         &:nth-child(4) {
+            @include tab {
+                transform: translateY(2px);
+            }
             @include sp {
                 transform: translateY(2px);
             }
@@ -587,8 +592,8 @@
         font-size: 1.6rem;
         font-weight: 300;
         letter-spacing: 0.38px;
-        margin-left: 24px;
-        margin-top: 11px;
+        margin-left: 23px;
+        margin-top: 12px;
         color: $subtext-color;
 
         @include tab {
@@ -606,8 +611,8 @@
     }
 
     .c-career__welfaresubitem {
-        margin-left: 23px;
-        margin-top: 10px;
+        margin-left: 21px;
+        margin-top: 11px;
 
         @include tab {
             margin-left: 20px;
@@ -642,7 +647,7 @@
             color: $subtext-color;
             margin: auto 8px;
             display: inline-block;
-            transform: translateY(-4px);
+            transform: translate(1px, -5px);
             @include sp {
                 margin: auto 7px;
             }
@@ -672,7 +677,7 @@
             font-size: 1.8rem;
             letter-spacing: 0.5px;
             line-height: 1.7;
-            margin-top: 9px;
+            margin-top: 10px;
             margin-left: 1px;
         }       
         @include sp {

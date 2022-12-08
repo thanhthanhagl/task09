@@ -4,19 +4,20 @@
 
     .c-mainvisual__inner {
         position: absolute;
-        top: 44.8%;
+        top: 52%;
         left: 10%;
         transform: translate(0%, -50%);
         text-align: center;
         width: 48%;
+        max-width: 450px;
         text-align: left;
         @include tab {
-            top: 46.4%;
+            top: 52.3%;
             left: 5.2%;
             width: 47%;
         }
         @include sp {
-            top: 49.1%;
+            top: 61.7%;
             left: 5.2%;
             width: 69%;
         }
@@ -24,16 +25,16 @@
 
     .c-mainvisual__btn {
         position: absolute;
-        bottom: 15.7%;
+        bottom: 13.7%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
         @include tab {
-            bottom: 12.7%;
-            left: 51.3%;
+            bottom: 11%;
+            left: 51.5%;
         }
         @include sp {
-            bottom: 14%;
+            bottom: 10.5%;
             left: 50.5%;
         }
     }
@@ -42,7 +43,7 @@
         text-transform: uppercase;
         color: $main-color;
         font-size: 2rem;
-        letter-spacing: 0.48px;
+        letter-spacing: 0.5px;
         font-weight: 500;
         transition: opacity 1s ease 1s;
 
@@ -71,6 +72,13 @@
 
     .c-mainvisual__imgitem {
         width: 100%;
+        @include tab {
+            height: 100vh;
+            object-fit: cover;
+        }
+        @include sp {
+            object-position: right;
+        }
     }
 
     .c-mainvisual__pagetitle {
@@ -98,15 +106,16 @@
         background-color: $main-color;
         display: block;
         width: fit-content;
-        padding: 0 5px 0 8px;
-        margin-bottom: 16px;
+        padding: 0 8px;
+        height: 69px;
+        margin-bottom: 17px;
         @include tab {
-            padding: 0 9px 0 10px;
-            margin-bottom: 14px;
+            height: 50px;
         }
         @include sp {
-            margin-bottom: 11px;
+            margin-bottom: 6px;
             padding: 0 13px 0 6px;
+            height: 41px;
         }
     }    
 
@@ -120,23 +129,24 @@
         bottom: 0;
         transform: translate(6px, 0);
         padding: 35px 0 28px;
-        left: 9.6%;
+        left: 9.7%;
         width: 80.1%;
         font-weight: 500;
         @include tab {
             font-size: 2.2rem;
             padding: 20px 0 19px;
-            letter-spacing: 1.63px;
-            left: 4.6%;
-            width: 90%;          
+            letter-spacing: 1.6px;
+            left: 4.4%;
+            width: 90%;     
         }
         @include sp {
             font-size: 1.8rem;
-            left: 1%;
+            left: 2%;
             width: 95%;
             line-height: 1.4;
             letter-spacing: 0.4px;
             padding: 15px 40px 8px;
+            transform: translate(2px, 0);  
         }
     }
 
@@ -150,16 +160,12 @@
 
     .c-mainvisual__img {
         width: 100%;
-        height: calc(100vh - 115px);
+        height: 100vh;
         min-height: 500px;
         object-fit: cover;
-        object-position: center;
+        object-position: right;
         @include tab {
-            height: calc(100vh - 95px);
-        }
-        @include sp {
-            // height: calc(100vh - 216px);
-            height: 100vh;
+            height: 100vh
         }
     }
 
@@ -168,7 +174,7 @@
     }
 
     .slick-active.c-mainvisual__tobottom {
-         animation: tobottom 10s infinite linear;
+        animation: tobottom 10s infinite linear;
     }
 
     .slick-active.c-mainvisual__toright {

@@ -6,12 +6,10 @@
     height: 100%;
     z-index: 111;
     padding: 30px 10px;
-    opacity: 0;
-    transform: scale(0, 0);
+    display: none;
 
     &.is-open {
-        opacity: 1;
-        transform: scale(1, 1);
+        display: block;
         transition: all 0.5s ease-in-out;
     }
 

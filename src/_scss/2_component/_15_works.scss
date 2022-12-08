@@ -1,7 +1,7 @@
 .c-works {
     margin: 100px auto 0;
     @include tab {
-        margin: -5% auto 0;
+        margin: -4.9% auto 0;
     }
 
     .c-works__top {
@@ -102,7 +102,7 @@
         &:first-child {
             .c-works__feature {
                 &:first-child {
-                    padding: 2.5% 4%;
+                    padding: 2.4% 4.2%;
                     @include tab {
                         padding: 12px 20px 10px 19px;
                     }
@@ -311,7 +311,7 @@
     }
 
     .c-works__desc {
-        margin-top: 14px;
+        margin-top: 13px;
         font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: 0.4px;
@@ -398,10 +398,7 @@
         object-fit: cover;
         max-width: 400px;
         width: 100%;
-        height: 100%;    
-        @include tab{
-            max-height:187px;
-        }
+        height: 100%;
     }
 
     .c-works__photoitem {

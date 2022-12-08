@@ -6,13 +6,10 @@
     height: 100%;
     z-index: 111;
     padding: 30px 10px;
-    opacity: 0;
-    transform: scale(0, 0);
+    display: none;
 
     &.is-open {
-        opacity: 1;
-        transform: scale(1, 1);
-        transition: all 0.5s ease-in-out;
+        display: block;
     }
 
     .c-popup__overlay {
@@ -45,9 +42,8 @@
         background: #fff;
         border: 4px #0080cc solid;
         text-align: center;
-        padding: 48px 55px 22px 57px;
-        max-height: 100vh;
-        height: 630px;
+        padding: 48px 45px 22px 55px;
+        height: 715px;
         display: none;
         overflow-y: scroll;
 
@@ -65,17 +61,19 @@
         }
 
         @include sp {
-            padding: 40px 20px;
+            padding: 33px 19px;
+            border: 2px #0080cc solid;
         }
     }
 
     .c-popup__main {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin: 37px auto 0;
 
         @include sp {
             flex-direction: column;
+            margin: 15px auto 0;
         }
     }
 
@@ -91,16 +89,16 @@
             font-size: 2rem;
             line-height: 1.5;
             letter-spacing: 1.1px;
+            width: 90%;
         }
     }
 
     .c-popup__left {
-        max-width: 290px;
-        width: 100%;
-        margin-right: 40px;
+        width: 290px;
 
         @include sp {
             margin: 0 auto 40px;
+            width: 295px;
         }
     }
 
@@ -116,11 +114,15 @@
     }
 
     .c-popup__right {
-        max-width: 510px;
+        max-width: 515px;
         width: 100%;
         text-align: left;
         margin-bottom: 40px;
         margin-top: -6px;
+
+        @include sp {
+            margin-top: -5px;
+        }
     }
 
     .c-popup__info {
@@ -128,6 +130,10 @@
         background-color: $main-color;
         padding: 9px 0 13px;
         color: $text-color;
+
+        @include sp {
+            padding: 8px 0 14px;
+        }
     }
 
     .c-popup__name {
@@ -154,6 +160,7 @@
             font-size: 1.6rem;
             letter-spacing: 0.2px;
             line-height: 1.6;
+            margin-bottom: 13px;
         }
     }
 

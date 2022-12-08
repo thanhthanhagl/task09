@@ -45,15 +45,18 @@ $(document).ready(function () {
     popup.find("img").attr("src", img_src);
     popup.addClass("is-open");
     $('body').addClass('is-fixed');
+    $('.c-backtotop').addClass("is-hidetop");
   });
 
   $(closeBtn).on("click", function () {
     popup.removeClass("is-open");
     $('body').removeClass('is-fixed');
+    $('.c-backtotop').removeClass("is-hidetop");
   });
   $(overlay).on("click", function () {
     popup.removeClass("is-open");
     $('body').removeClass('is-fixed');
+    $('.c-backtotop').removeClass("is-hidetop");
   });
 
   popupImage.on("click", function (e) {
@@ -66,12 +69,14 @@ $(document).ready(function () {
     $('.c-popup').addClass('is-open');
     $(popup_name).fadeIn(300);
     $('body').addClass('is-fixed');
+    $('.c-backtotop').addClass("is-hidetop");
   });
   //Click button to close popup
   $(".c-popup__close").on("click", function () {
     $('.c-popup__box').fadeOut(300);
     $('.c-popup').removeClass('is-open');
     $('body').removeClass('is-fixed');
+    $('.c-backtotop').removeClass("is-hidetop");
   });
 //Click overlay to close popup
   $(".c-popup__overlay").on("click", function (e) {
@@ -80,6 +85,7 @@ $(document).ready(function () {
       $('.c-popup').removeClass('is-open');
       $('body').removeClass('is-fixed');
       $('.c-popup__box').fadeOut(300);
+      $('.c-backtotop').removeClass("is-hidetop");
     };
   });
   //menu mobile
@@ -110,14 +116,20 @@ $(".c-header__navmb").click(function () {
             $('.c-header__linkmb').eq(i).addClass('is-active');
         }
     });
+    if(scrollDistance > 80){
+      $('.c-header').addClass('is-scroll');
+    }
+    else{
+      $('.c-header').removeClass('is-scroll');
+    }
 }).scroll();
  // Back to top
- $(".c-backtotop").addClass("c-hidetop");
+ $(".c-backtotop").addClass("is-hidetop");
  $(window).scroll(function () {
    if ($(this).scrollTop() > 80) {
-     $('.c-backtotop').removeClass("c-hidetop");
+     $('.c-backtotop').removeClass("is-hidetop");
    } else {
-     $('.c-backtotop').addClass("c-hidetop");
+     $('.c-backtotop').addClass("is-hidetop");
    }
  });
  $('.c-backtotop').click(function () {

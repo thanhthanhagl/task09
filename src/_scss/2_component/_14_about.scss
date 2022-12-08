@@ -19,7 +19,7 @@
 
     .c-about__left {
         width: 57.8%;
-        padding: 12.2% 0 15.8% 13%;
+        padding: 12.2% 0 15.9% 13%;
 
         @include tab {
             width: 60.8%;
@@ -39,7 +39,7 @@
         @include tab {
             width: 46%;
             margin-right: -11.6%;
-            padding: 61px 0 31px;
+            padding: 61px 0 39px;
         }
 
         @include sp {
@@ -75,6 +75,9 @@
                 height: 99%;
             }
         }
+        @include tab{
+            margin-bottom: 42px;
+        }
         @include sp {
             max-width: 345px;
             margin: 0 auto 31px;
@@ -88,7 +91,7 @@
         font-size: 3.4rem;
         font-weight: 500;
         letter-spacing: 2.5px;
-        margin-bottom: 5.5%;
+        margin-bottom: 5.7%;
         @include tab {
             font-size: 3rem;
             letter-spacing: 1.6px;
@@ -112,7 +115,7 @@
             font-size: 1.4rem;
             letter-spacing: 0.4px;
             line-height: 1.8;
-            margin-bottom: 24px;
+            margin-bottom: 25px;
         }
         @include sp {
             line-height: 1.6;
