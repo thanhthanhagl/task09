@@ -2,7 +2,6 @@
 ------------------------------------------------------------*/
 .c-header {
     padding: 15px 21px 12px;
-    position: fixed;
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
     margin: 0 auto;
@@ -10,6 +9,7 @@
 
     &.is-scroll {
         background: #fff;
+        position: fixed;
     }
 
     @include tab {
@@ -21,7 +21,6 @@
     }
 
     .c-header__gnav {
-        max-width: 1740px;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -56,6 +55,7 @@
 
     .c-header__list {
         width: 58%;
+        max-width: 680px;
         position: relative;
         left: 2.1%;
         display: flex;
@@ -63,7 +63,8 @@
         justify-content: space-between;
 
         @include tab {
-            width: 95%;
+            max-width: 100%;
+            width: 94.5%;
             left: 2.7%;
             margin-top: 25px;
         }
@@ -128,16 +129,16 @@
     .c-header__btnrecruit {
         border-radius: 9px;
         background-color: $main-color;
-        width: 185px;
+        padding: 10px 40px;
         height: 50px;
-        padding: 10px 0;
         text-align: center;
         margin-top: 2px;
+        display: flex;
 
         @include tab {
-            width: 157px;
+            width: 156px;
             height: 40px;
-            padding: 5px 0;
+            padding: 5px 26px;
             margin-top: 0;
         }
 
@@ -154,14 +155,11 @@
     }
 
     .c-header__imgrecruit {
-        transform: translate(-5px, 4px);
-
+        position: relative;
+        top: 5px;
+        left: -2px;
         @include tab {
-            transform: translate(-4px, 6px);
-        }
-
-        @include sp {
-            transform: translate(0, 1px);
+            left: 0;
         }
     }
 
@@ -176,7 +174,7 @@
             font-size: 1.6rem;
             letter-spacing: 2px;
             line-height: 1.9;
-            margin-left: 4px;
+            margin-left: 8px;
         }
 
         @include sp {

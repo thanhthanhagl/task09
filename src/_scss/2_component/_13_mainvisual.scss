@@ -1,6 +1,14 @@
 .c-mainvisual {
     position: relative;
     padding: 0;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    @include tab {
+        height: calc(100vh - 113px);
+    }
+    @include sp {
+        height: calc(100vh - 57px);
+    }
 
     .c-mainvisual__inner {
         position: absolute;
@@ -162,22 +170,44 @@
         width: 100%;
         height: 100vh;
         min-height: 500px;
-        object-fit: cover;
-        object-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
         @include tab {
-            height: 100vh
+            height: 100vh;
         }
+
+        &:nth-child(1) {
+            background-image: url("./assets/img/entex_mainvisual1.jpg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("./assets/img/entex_mainvisual2.jpg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("./assets/img/entex_mainvisual3.jpg");
+        }
+    }   
+
+    .c-mainvisual__txt {
+        display: none;
     }
 
     .slick-active.c-mainvisual__zoomin {
-        animation: zoomin 10s infinite linear;
+        animation: zoomin 10s linear forwards;
+        background-size: 120%;
+        background-position: center center;
     }
 
     .slick-active.c-mainvisual__tobottom {
-        animation: tobottom 10s infinite linear;
+        animation: tobottom 10s linear forwards;
+        background-size: 120%;
+        background-position: center center;
     }
 
     .slick-active.c-mainvisual__toright {
-        animation: toright 10s infinite linear;
+        animation: toright 10s linear forwards;
+        background-size: 120%;
+        background-position: center center;
     }
 }

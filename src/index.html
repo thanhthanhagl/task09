@@ -8,18 +8,9 @@
   <main class="p-top">
     <section class="c-mainvisual c-section">
       <div class="c-mainnvisual__imgs">
-        <picture class="c-mainvisual__img c-mainvisual__zoomin">
-          <source media="(max-width: 767px)" srcset="./assets/img/entex_mainvisual1sp.jpg">
-          <img class="c-mainvisual__imgitem" src="../assets/img/entex_mainvisual1.jpg" alt="若い力を発揮できる環境がココにはある。">
-        </picture>
-        <picture class="c-mainvisual__img c-mainvisual__tobottom">
-          <source media="(max-width: 767px)" srcset="./assets/img/entex_mainvisual1sp.jpg">
-          <img class="c-mainvisual__imgitem" src="./assets/img/entex_mainvisual2.jpg" alt="若い力を発揮できる環境がココにはある。">
-        </picture>
-        <picture class="c-mainvisual__img c-mainvisual__toright">
-          <source media="(max-width: 767px)" srcset="./assets/img/entex_mainvisual1sp.jpg">
-          <img class="c-mainvisual__imgitem" src="./assets/img/entex_mainvisual3.jpg" alt="若い力を発揮できる環境がココにはある。">
-        </picture>
+        <div class="c-mainvisual__img c-mainvisual__zoomin"><span class="c-mainvisual__txt">slide 1</span></div>
+        <div class="c-mainvisual__img c-mainvisual__tobottom"><span class="c-mainvisual__txt">slide 1</span></div>
+        <div class="c-mainvisual__img c-mainvisual__toright"><span class="c-mainvisual__txt">slide 1</span></div>
       </div>
       <div class="c-mainvisual__inner">
         <h1 class="c-mainvisual__pagetitle">
@@ -53,16 +44,16 @@
         <div class="c-about__right" data-aos="fade-up">
           <div class="c-about__wrapimg">
             <picture class="c-about__img c-about__imgtop">
-              <source media="(max-width: 767px)" srcset="../assets/img/about1sp.jpg">
-              <source media="(max-width: 1023px)" srcset="../assets/img/about1tablet.jpg">
-              <img src="../assets/img/about1.jpg" alt="私たちについて top">
+              <source media="(max-width: 767px)" srcset="./assets/img/about1sp.jpg">
+              <source media="(max-width: 1023px)" srcset="./assets/img/about1tablet.jpg">
+              <img src="./assets/img/about1.jpg" alt="私たちについて top">
             </picture>
           </div>
           <div class="c-about__wrapimg">
             <picture class="c-about__img c-about__imgbottom">
               <source media="(max-width: 767px)" srcset="./assets/img/about2sp.jpg">
               <source media="(max-width: 1023px)" srcset="./assets/img/about2tablet.jpg">
-              <img src="../assets/img/about2.jpg" alt="私たちについて bottom">
+              <img src="./assets/img/about2.jpg" alt="私たちについて bottom">
             </picture>
           </div>
         </div>
@@ -98,15 +89,15 @@
           </div>
           <div class="c-works__wrapimg">
             <picture>
-              <source media="(max-width:767px)" srcset="./assets/img/works3sp.jpg">
-              <source media="(max-width:1023px)" srcset="./assets/img/works3tablet.jpg">
+              <source media="(max-width: 767px)" srcset="./assets/img/works3sp.jpg">
+              <source media="(max-width: 1023px)" srcset="./assets/img/works3tablet.jpg">
               <img class="c-works__img" src="./assets/img/works3.jpg" alt="左官作業と言われるコンクリートを扱う工事作業">
             </picture>
           </div>
           <div class="c-works__wrapimg">
             <picture>
-              <source media="(max-width:767px)" srcset="./assets/img/works4sp.jpg">
-              <source media="(max-width:1023px)" srcset="./assets/img/works4tablet.jpg">
+              <source media="(max-width: 767px)" srcset="./assets/img/works4sp.jpg">
+              <source media="(max-width: 1023px)" srcset="./assets/img/works4tablet.jpg">
               <img class="c-works__img" src="./assets/img/works4.jpg" alt="電気工事（照明、インターホンの取付）">
             </picture>
           </div>
@@ -271,7 +262,7 @@
           </ul>
           <div class="c-career__support">
             <h3 class="c-career__supporttitle">独立支援制度も充実!<span class="c-tab"><br></span>20代でも独立可能</h3>
-            <ul class="c-career__supportinfo">独立支援制度
+            <ul class="c-career__supportinfo"><li class="c-career__supportinfotxt">独立支援制度</li>
               <li class="c-career__supportfirst">資格取得費用の援助
                 <ul>
                   <li class="c-career__supportitem">座学（法律、行政への対応）の勉強支援</li>
@@ -492,10 +483,7 @@
                 <div class="c-popup__main">
                   <div class="c-popup__left">
                     <div class="c-popup__ava">
-                      <picture>
-                        <source media="(max-width:767px" srcset="<%= person.avappsp %>">
-                        <img class="c-popup__avatar" src="<%= person.avapp %>" alt="<%= person.name %>">
-                      </picture>
+                      <img class="c-popup__avatar" src="<%= person.avapp %>" alt="<%= person.name %>">
                     </div>
                     <div class="c-popup__info">
                       <div class="c-popup__text">

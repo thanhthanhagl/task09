@@ -287,9 +287,10 @@
             width: 97%;
         }
     }
-    .c-career__titleedit{
+
+    .c-career__titleedit {
         margin-left: 8px;
-        @include tab{
+        @include tab {
             margin-left: 0;
         }
     }
@@ -684,8 +685,10 @@
             font-size: 1.6rem;
             letter-spacing: 0.2px;
             line-height: 1.6;
-        } 
+        }         
+    }
 
+    .c-career__supportinfotxt {
         &::before {
             font-family: "Font Awesome 5 Free";
             content: "\f111";
