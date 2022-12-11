@@ -198,6 +198,15 @@
         float: right;
         text-align: center;
         top: 27px;
+        @include tab {
+            float: unset;
+            margin: 0 auto;
+        }
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
 
         &::before {
             content: "";

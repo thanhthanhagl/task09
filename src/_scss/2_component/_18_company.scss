@@ -27,7 +27,6 @@
 
     .c-company__table {
         margin-top: 58px;
-        border: 1px solid #cbcbcb;
         border-collapse: collapse;
         @include tab {
             margin-top: 33px;
@@ -39,7 +38,6 @@
 
     .c-company__th {
         border: 1px solid #cbcbcb;
-        border-collapse: collapse;
         background-color: #f7f7f7;
         padding: 13px 19px 11px;
         color: $td-color;
@@ -67,7 +65,6 @@
 
     .c-company__td {
         border: 1px solid #cbcbcb;
-        border-collapse: collapse;
         max-width: 673px;
         width: 70.1%;
         padding: 13px 20px 11px;

@@ -108,41 +108,39 @@ $(document).ready(function () {
   //----------- nav scroll ------------------
   $(window).scroll(function () {
     var scrollDistance = $(window).scrollTop();
-    let sections = document.querySelectorAll(".c-section");
-    let navLinks = document.querySelectorAll(".c-header__link");
-    $('.c-section').each(function (i) {
-      if ($(this).position().top <= scrollDistance) {
-          $('.c-header__link').removeClass('is-active');
-          $('.c-header__link').eq(i).addClass('is-active');
-          $('.c-header__linkmb').removeClass('is-active');
-          $('.c-header__linkmb').eq(i).addClass('is-active');
-      }
-  });
+    var headerheight = $(".c-header").height() + 30;
     if (scrollDistance > 80) {
       $('.c-header').addClass('is-scroll');
     }
     else {
       $('.c-header').removeClass('is-scroll');
+
     }
+    let navLinks = document.querySelectorAll("header nav a");
+    $(".c-section").each(function (i) {
+      var h1 = $(this).offset().top;
+      var h2 = $(this).innerHeight() + h1;
+      var id = $(this).attr("id");     
+      if (h1 - headerheight < scrollDistance && scrollDistance < h2) {
+        navLinks.forEach(links => {
+          links.classList.remove("is-active");
+          if (document.querySelector("header nav a[href*=" + id + "]")) {
+            document.querySelector("header nav a[href*=" + id + "]").classList.add("is-active");
+          }
+        });
+      }
+    });    
   }).scroll();
-  //-------- plus header----------
-  $('.c-header__link').click(function (e) {
-    const headerHeight = $('.c-header').height();
-    const hash = this.hash;
-    const scrollToSection = $(hash).offset().top - headerHeight - 30;
-    $('html, body').animate({
-      scrollTop: scrollToSection,
-    }, 300);
+  var headerheight=$(".c-header").height() - 50;
+  console.log(headerheight);
+  $('.c-header__link').click(function () {
+    var tag=$(this).attr("href");
+    var top=tag.offsetTop;
+    console.log(top);
+    $('html, body').animate({ scrollTop: $(tag).position().top}, 800);
+    return false;
   });
-  $('.c-header__linkmb').click(function (e) {
-    const headerHeight = $('.c-header').height();
-    const hash = this.hash;
-    const scrollToSection = $(hash).offset().top - headerHeight - 30;
-    document.querySelector(".c-header__linkmb[href*=" + id + "]").classList.add("is-active");
-    $('html, body').animate({
-      scrollTop: scrollToSection,
-    }, 300);
-  });
+ 
   //----------- Back to top------------
   $(".c-backtotop").addClass("is-hidetop");
   $(window).scroll(function () {

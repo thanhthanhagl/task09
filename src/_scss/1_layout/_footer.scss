@@ -21,11 +21,11 @@ footer
     }
 
     .c-footer__top {
-        padding: 25px 20px 20px;
+        padding: 25px 20px 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        border-bottom: 1px solid #efefef;
+        max-width: 1200px;
         @include tab {
             padding: 31px 0 35px;
             position: relative;
@@ -45,7 +45,7 @@ footer
     }
 
     .c-footer__list {
-        width: 62%;
+        width: 55%;
         max-width: 680px;
         position: relative;
         left: 3.9%;
@@ -75,7 +75,7 @@ footer
         background-color: $main-color;
         max-width: 185px;
         height: 50px;
-        padding: 10px;
+        padding: 10px 40px;
         text-align: center;
         margin-top: -6px;
         display: flex;
@@ -90,6 +90,9 @@ footer
     }
 
     .c-footer__imgrecruit {
+        position: relative;
+        top: 5px;
+        left: -5px;
     }
 
     .c-footer__txtrecruit {
@@ -110,7 +113,9 @@ footer
         letter-spacing: 0.3px;
         text-align: right;
         padding-right: 59px;
+        padding-top: 10px;
         margin: 10px 0 15px;
+        border-top: 1px solid #efefef;
         @include tab {
             padding-right: 0;
             margin: 12px 0;

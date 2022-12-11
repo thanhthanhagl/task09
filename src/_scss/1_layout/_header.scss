@@ -10,6 +10,8 @@
     &.is-scroll {
         background: #fff;
         position: fixed;
+        top: 0;
+        left: 0;
     }
 
     @include tab {
@@ -22,6 +24,7 @@
 
     .c-header__gnav {
         width: 100%;
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -90,8 +93,7 @@
                 content: "";
                 background-color: $main-color;
                 height: 2px;
-                margin-top: -16px;
-                transition-duration: 0.3s;
+                margin-top: -12px;
                 display: block;
             }
         }
@@ -157,7 +159,7 @@
     .c-header__imgrecruit {
         position: relative;
         top: 5px;
-        left: -2px;
+        left: -5px;
         @include tab {
             left: 0;
         }
