@@ -34,7 +34,7 @@
         z-index: 10;
         max-height: 100vh;
         overflow-y: auto;
-        @include sp {
+        @include tab {
             width: 90%;
         }
     }
@@ -44,7 +44,7 @@
         border: 4px #0080cc solid;
         text-align: center;
         padding: 40px;
-        @include sp {
+        @include tab {
             padding: 36px 20px 18px;
             border: 2px #0080cc solid;
         }
@@ -55,7 +55,7 @@
         max-height: 600px;
         width: 100%;
         height: auto;
-        @include sp {
+        @include tab {
             margin: 0 auto 18px;
         }
     }
@@ -73,6 +73,7 @@
         line-height: 1.2;
         padding: 11px 0 9px 18px;
         position: relative;
+        cursor: pointer;
         @include tab {
             float: unset;
             margin: 0 auto;
@@ -86,24 +87,24 @@
         &::before {
             content: "";
             background: #fff;
-            width: 10px;
+            width: 12px;
             height: 2px;
             transform: translateY(-2px) rotate(45deg);
             position: absolute;
             left: 25px;
-            top: calc(50% + 2px);
+            top: calc(50% + 1px);
             display: inline-block;
         }
 
         &::after {
             content: "";
             background: #fff;
-            width: 10px;
+            width: 12px;
             height: 2px;
             transform: translateY(-2px) rotate(-45deg);
             position: absolute;
             left: 25px;
-            top: calc(50% + 3px);
+            top: calc(50% + 1px);
             display: inline-block;
         }
     }

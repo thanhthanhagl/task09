@@ -34,11 +34,12 @@
         z-index: 9999;
         
         @include tab {
-            max-width: 600px;
+            max-width: 90%;
         }
 
         @include sp {
             max-width: 336px;
+            padding: 0;
         }
     }
 
@@ -47,7 +48,7 @@
         border: 4px #0080cc solid;
         text-align: center;
         padding: 48px 45px 22px 55px;
-        height: 715px;
+        height: 100vh;
         display: none;
         overflow-y: scroll;
 
@@ -75,7 +76,7 @@
         justify-content: space-between;
         margin: 37px auto 0;
 
-        @include sp {
+        @include tab {
             flex-direction: column;
             margin: 15px auto 0;
         }
@@ -89,18 +90,22 @@
         letter-spacing: 1.8px;
         line-height: 1;
 
-        @include sp {
+        @include tab {
             font-size: 2rem;
             line-height: 1.5;
             letter-spacing: 1.1px;
             width: 90%;
+            text-align: center;
+        }
+        @include sp {
+            text-align: left;
         }
     }
 
     .c-popup__left {
         width: 290px;
 
-        @include sp {
+        @include tab {
             margin: 0 auto 40px;
             width: 295px;
         }
@@ -112,7 +117,7 @@
         object-fit: cover;
         object-position: top;
 
-        @include sp {
+        @include tab {
             height: 316px;
         }
     }
@@ -124,8 +129,8 @@
         margin-bottom: 40px;
         margin-top: -6px;
 
-        @include sp {
-            margin-top: -5px;
+        @include tab {
+            margin: -5px auto 40px;
         }
     }
 
@@ -135,7 +140,7 @@
         padding: 9px 0 13px;
         color: $text-color;
 
-        @include sp {
+        @include tab {
             padding: 8px 0 14px;
         }
     }
@@ -160,7 +165,7 @@
         line-height: 1.8;
         margin-bottom: 4px;
 
-        @include sp {
+        @include tab {
             font-size: 1.6rem;
             letter-spacing: 0.2px;
             line-height: 1.6;
@@ -176,7 +181,7 @@
         line-height: 1.85;
         margin-bottom: 25px;
 
-        @include sp {
+        @include tab {
             font-size: 1.4rem;
             letter-spacing: 0.3px;
             line-height: 1.5;
@@ -197,6 +202,7 @@
         position: relative;
         float: right;
         text-align: center;
+        cursor: pointer;
         top: 27px;
         @include tab {
             float: unset;
@@ -211,7 +217,7 @@
         &::before {
             content: "";
             background: #fff;
-            width: 10px;
+            width: 12px;
             height: 2px;
             transform: translateY(-2px) rotate(45deg);
             position: absolute;
@@ -223,12 +229,12 @@
         &::after {
             content: "";
             background: #fff;
-            width: 10px;
+            width: 12px;
             height: 2px;
             transform: translateY(-2px) rotate(-45deg);
             position: absolute;
             left: 25px;
-            top: 50%;
+            top: calc(50% + 1px);
             display: inline-block;
         }
     }

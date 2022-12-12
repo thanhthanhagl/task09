@@ -1,11 +1,12 @@
 .c-career {
-    margin: 93px auto 0;
+    margin: 0 auto;
+    padding-top: 7.8%;
 
     @include tab {
-        margin: 7% auto 0;
+        padding-top: 7%;
     }
     @include sp {
-        margin: 9% auto 0;
+        padding-top: 9%;
     }
 
     .c-career__top {
@@ -57,7 +58,7 @@
         width: 76.8%;
         margin-top: 74px;
         background-color: #f8f8f8;
-        padding: 8% 5% 8.1% 10%;
+        padding: 7.8% 5% 8.1% 10%;
 
         @include tab {
             padding: 51px 38px 59px 41px;
@@ -71,7 +72,7 @@
     }
 
     .c-career__roadmapmain {
-        padding-top: 46px;
+        padding-top: 48px;
         padding-left: 40px;
 
         @include tab {
@@ -235,7 +236,7 @@
 
         @include tab {
             width: 60%;
-            padding: 7% 0 0 2.7%;
+            padding: 7.2% 0 0 2.7%;
         }
         @include sp {
             width: 100%;
@@ -248,7 +249,7 @@
         width: 100%;
         margin-top: 7px;
         @include tab {
-            margin-top: 6px;
+            margin-top: 5px;
         }
         @include sp {
             margin-top: 10px;
@@ -380,13 +381,13 @@
         font-weight: 400;
         letter-spacing: 0.4px;
         line-height: 1.75;
-        margin-top: 24px;
+        margin-top: 23px;
 
         @include tab {
             font-size: 1.4rem;
             letter-spacing: 0.3px;
             line-height: 1.8;
-            margin-top: 20px;
+            margin-top: 21px;
         }
         @include sp {
             line-height: 1.57;

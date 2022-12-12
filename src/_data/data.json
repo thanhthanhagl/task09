@@ -54,35 +54,35 @@
   "media": {
     "main": [
       {
-        "url": "./assets/img/media1.jpg",
+        "pp":"./assets/img/media1pp.jpg",
         "alt": "fence"
       },
       {
-        "url": "./assets/img/media2.jpg",
+        "pp":"./assets/img/media2pp.jpg",
         "alt": "plant"
       },
       {
-        "url": "./assets/img/media3.jpg",
+        "pp":"./assets/img/media3pp.jpg",
         "alt": "house"
       },
       {
-        "url": "./assets/img/media4.jpg",
+        "pp":"./assets/img/media4pp.jpg",
         "alt": "white house"
       },
       {
-        "url": "./assets/img/media5.jpg",
+        "pp":"./assets/img/media5pp.jpg",
         "alt": "garage"
       },
       {
-        "url": "./assets/img/media6.jpg",
+        "pp":"./assets/img/media6pp.jpg",
         "alt": "door"
       },
       {
-        "url": "./assets/img/media7.jpg",
+        "pp":"./assets/img/media7pp.jpg",
         "alt": "yard"
       },
       {
-        "url": "./assets/img/media8.jpg",
+        "pp":"./assets/img/media8pp.jpg",
         "alt": "tree"
       }
     ]
@@ -195,7 +195,7 @@
           },
           {
             "q":"Q. 入社を希望される方に向けてメッセージをお願いします",
-            "a":"<li class='c-popup__dot'>一生懸命やれば、知恵が出る</li><li class='c-popup__dot'>いい加減だと言い訳ばかり</li><li class='c-popup__dot'>中途半端だと愚痴が出る</li>入社を希望される方は、この言葉通りに一生懸命がんばってください。"
+            "a":"<span class='c-popup__dot'>一生懸命やれば、知恵が出る</span><span class='c-popup__dot'>いい加減だと言い訳ばかり</span><span class='c-popup__dot'>中途半端だと愚痴が出る</span>入社を希望される方は、この言葉通りに一生懸命がんばってください。"
           }
         ]}
       }
@@ -327,7 +327,7 @@
       },
       {
         "th":"電話番号",
-        "td":"0798-23-6600"
+        "td":"<span class='c-pctab'> 0798-23-6600 </span><a class='c-tab' href='tel:0798236600'> 0798-23-6600 </a>"
       },
       {
         "th":"FAX",
@@ -335,7 +335,7 @@
       },
       {
         "th":"E-mail",
-        "td":"office@entex.co.jp"
+        "td":"<a href='mailto:office@entex.co.jp'>office@entex.co.jp</a>"
       },
       {
         "th":"資本金",
@@ -363,7 +363,7 @@
       },
       {
         "th":"産業廃棄物収集運搬",
-        "td":"第02700132723号、第02803132723号"
+        "td":"第<span class='c-pctab'>02700132723</span><a class='c-tab' href='tel:02700132723'>02700132723</a>号、第<span class='c-pctab'>02803132723</span><a class='c-tab' href='tel:02803132723'>02803132723</a>号"
       },
       {
         "th":"宅地建物取引業",

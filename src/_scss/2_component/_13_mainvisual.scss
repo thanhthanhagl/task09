@@ -12,7 +12,7 @@
 
     .c-mainvisual__inner {
         position: absolute;
-        top: 52%;
+        top: 47.5%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -20,27 +20,29 @@
         width: 100%;
         text-align: left;
         @include tab {
-            top: 52.3%;
+            top: 45%;
             max-width: 840px;
+            left: 55.2%;
         }
         @include sp {
-            top: 61.7%;
+            top: 59%;
+            left: 50%;
             max-width: 335px;
         }
     }
 
     .c-mainvisual__btn {
         position: absolute;
-        bottom: 13.7%;
+        bottom: 14.7%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
         @include tab {
-            bottom: 11%;
+            bottom: 12.7%;
             left: 51.5%;
         }
         @include sp {
-            bottom: 10.5%;
+            bottom: 11.2%;
             left: 50.5%;
         }
     }
@@ -113,15 +115,13 @@
         display: block;
         width: fit-content;
         padding: 0 8px;
-        height: 69px;
         margin-bottom: 17px;
         @include tab {
-            height: 50px;
+            margin-bottom: 14px;
         }
         @include sp {
-            margin-bottom: 6px;
+            margin-bottom: 10px;
             padding: 0 13px 0 6px;
-            height: 41px;
         }
     }    
 
@@ -141,7 +141,7 @@
         @include tab {
             font-size: 2.2rem;
             padding: 20px 0 19px;
-            letter-spacing: 1.6px;
+            letter-spacing: 1.5px;
             left: 4.4%;
             width: 90%;     
         }
@@ -170,7 +170,7 @@
         min-height: 500px;
         background-size: cover;
         background-repeat: no-repeat;
-
+        
         &:nth-child(1) {
             background-image: url("./assets/img/entex_mainvisual1.jpg");
             @include tab {
@@ -193,6 +193,12 @@
 
         &:nth-child(3) {
             background-image: url("./assets/img/entex_mainvisual3.jpg");
+            @include tab {
+                background-image: url("./assets/img/entex_mainvisual3tablet.jpg");
+            }
+            @include sp {
+                background-image: url("./assets/img/entex_mainvisual3sp.jpg");
+            }
         }
     }   
 
@@ -204,14 +210,17 @@
         animation: zoomin 10s linear forwards;
         background-size: 120%;
         background-position: center center;
+        @include sp {
+            background-size: cover;
+            background-position: center bottom;
+        }
     }
 
     .slick-active.c-mainvisual__tobottom {
         animation: tobottom 10s linear forwards;
         background-size: 120%;
-        background-position: center center;
-        @include tab {
-            background-size: 100%;
+        @include sp {
+            background-size: 180%;
         }
     }
 
@@ -219,5 +228,8 @@
         animation: toright 10s linear forwards;
         background-size: 120%;
         background-position: center center;
+        @include sp {
+            background-size: 180%;
+        }
     }
 }

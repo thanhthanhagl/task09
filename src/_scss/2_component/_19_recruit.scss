@@ -2,10 +2,10 @@
     .c-recruit__main {
         max-width: 960px;
         width: 100%;
-        margin: 8.3% auto;
+        margin: 0 auto;
+        padding: 8.3% 0 0;
         @include tab {
-            padding: 0 20px;
-            margin: 7.8% auto 0;
+            padding: 7.7% 2.6% 0;
         }
         @include sp {
             padding: 0 10px;
@@ -159,7 +159,7 @@
         max-width: 741px;
         width: 100%;
         @include tab {
-            margin: 39px auto 0;
+            margin: 41px auto 0;
             max-width: 620px;
         }
         @include sp {
@@ -183,8 +183,9 @@
         @include sp {
             width: 22px;
             position: relative;
-            left: -16px;
-            margin-right: -3px;
+            left: 22px;
+            margin-right: 40px;
+            display: inline-block;
             transform: translateY(0);
         }
     }
@@ -213,6 +214,8 @@
             font-size: 1.8rem;
             letter-spacing: 0.4px;
             line-height: 1.6;
+            display: flex;
+            justify-content: flex-start;
         }
 
         &:first-child {

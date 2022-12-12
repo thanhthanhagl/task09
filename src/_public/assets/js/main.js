@@ -1,3 +1,5 @@
+// const { link } = require("fs-extra");
+
 $(document).ready(function () {
   //----------slick slider------------
   $('.c-mainnvisual__imgs').slick({
@@ -91,9 +93,14 @@ $(document).ready(function () {
   });
   //---------menu mobile------------
   $(".c-header__iconmenu").click(function () {
+    if($(window).scrollTop() < 30){
+      $(".c-header").toggleClass("is-scroll");
+    }
     $(".c-header__gnavmb").toggleClass("is-open");
     $(this).toggleClass("is-open");
     $('body').toggleClass("is-fixed");
+    
+    
   });
   $(".c-header__navmb").click(function () {
     $(".c-header__gnavmb").toggleClass("is-open");
@@ -108,7 +115,8 @@ $(document).ready(function () {
   //----------- nav scroll ------------------
   $(window).scroll(function () {
     var scrollDistance = $(window).scrollTop();
-    var headerheight = $(".c-header").height() + 30;
+    var headerheight = $(".c-header").height();
+    $("header nav ul a").removeClass("is-active");
     if (scrollDistance > 80) {
       $('.c-header').addClass('is-scroll');
     }
@@ -116,27 +124,37 @@ $(document).ready(function () {
       $('.c-header').removeClass('is-scroll');
 
     }
-    let navLinks = document.querySelectorAll("header nav a");
-    $(".c-section").each(function (i) {
+    $(".c-section").each(function () {
       var h1 = $(this).offset().top;
       var h2 = $(this).innerHeight() + h1;
-      var id = $(this).attr("id");     
-      if (h1 - headerheight < scrollDistance && scrollDistance < h2) {
-        navLinks.forEach(links => {
-          links.classList.remove("is-active");
-          if (document.querySelector("header nav a[href*=" + id + "]")) {
-            document.querySelector("header nav a[href*=" + id + "]").classList.add("is-active");
+      var id = $(this).attr("id");      
+      if (h1 < scrollDistance + headerheight && scrollDistance + headerheight <= h2) {        
+        $(("header nav ul a")).each(function(){   
+          if (document.querySelector("header nav ul a[href*=" + id + "]")) {
+            document.querySelector(".c-header__list a[href*=" + id + "]").classList.add("is-active");
+            document.querySelector("header .c-header__navmb a[href*=" + id + "]").classList.add("is-active");
           }
         });
       }
     });    
   }).scroll();
-  var headerheight=$(".c-header").height() - 50;
-  console.log(headerheight);
   $('.c-header__link').click(function () {
     var tag=$(this).attr("href");
+    var top=tag.offsetTop;    
+    if($(window).width() <= 1023){
+      $('html, body').animate({ scrollTop: $(tag).position().top - 100}, 800);
+    }
+    else{
+      $('html, body').animate({ scrollTop: $(tag).position().top}, 800);
+    }
+    return false;
+  });
+  $('.c-header__linkmb').click(function () {
+    var tag=$(this).attr("href");
     var top=tag.offsetTop;
-    console.log(top);
+    $(".c-header__gnavmb").toggleClass("is-open");
+    $('body').toggleClass("is-fixed");
+    $(".c-header__iconmenu").toggleClass("is-open");
     $('html, body').animate({ scrollTop: $(tag).position().top}, 800);
     return false;
   });

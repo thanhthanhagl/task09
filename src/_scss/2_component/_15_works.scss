@@ -1,8 +1,8 @@
 .c-works {
-    margin: 100px auto 0;
-    @include tab {
-        margin: -4.9% auto 0;
-    }
+    margin: 0 auto;
+    // @include tab {
+    //     margin: -4.9% auto 0;
+    // }
 
     .c-works__top {
         @include sp {
@@ -59,7 +59,7 @@
         }
         @include sp {
             width: 100%;
-            padding: 35px 10px 15px;
+            padding: 34px 10px 15px;
         }
     }
 
@@ -259,7 +259,7 @@
     }
 
     .c-works__title {
-        margin-top: 100px;
+        padding-top: 100px;
         color: $main-color;
         font-size: 3.4rem;
         font-weight: 500;
@@ -270,12 +270,13 @@
             font-size: 3rem;
             line-height: 1;
             letter-spacing: 1.6px;
+            padding-top: 8%;
         }
         @include sp {
             font-size: 2.4rem;
             letter-spacing: 1.3px;
             line-height: 1.3;
-            margin-top: 15%;
+            padding-top: 10%;
         }
     }
 

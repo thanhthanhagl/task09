@@ -136,7 +136,7 @@
             <% if (typeof media !='undefined' ) { %>
               <% media.main && media.main.forEach(photo=> { %>
                 <div class="c-works__photo">
-                  <img class="c-works__photoitem" src="<%= photo.url %>" alt="<%= photo.alt%>">
+                  <img class="c-works__photoitem" src="<%= photo.pp %>" alt="<%= photo.alt%>">
                   <p class="c-works__pickup">pick up</p>
                 </div>
                 <% }) %>
@@ -292,8 +292,8 @@
               <div class="c-interview__itemtop">
                 <div class="c-interview__ava">
                   <picture>
-                    <source media="(max-width:767px" srcset="<%= person.avasp %>">
-                    <source media="(max-width:1023px" srcset="<%= person.avatablet %>">
+                    <source media="(max-width:767px)" srcset="<%= person.avasp %>">
+                    <source media="(max-width:1023px)" srcset="<%= person.avatablet %>">
                     <img class="c-interview__avatar" src="<%= person.ava %>" alt="<%= person.name %>">
                   </picture>
                   <p class="c-interview__interview">interview</p>
@@ -463,7 +463,7 @@
       <div class="c-lightbox__overlay">
         <div class="c-lightbox__inner">
           <div class="c-lightbox__main">
-            <img class="c-lightbox__img" src="./assets/img/media1.jpg" alt="fence">
+            <img class="c-lightbox__img" src="./assets/img/media1pp.jpg" alt="fence">
             <p class="c-lightbox__close">閉じる</p>
           </div>
         </div>
